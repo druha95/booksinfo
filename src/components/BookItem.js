@@ -3,11 +3,6 @@
  */
 
 var React = require('react/addons');
-
-// CSS
-require('normalize.css');
-require('../styles/main.css');
-
 var $ = require('jquery');
 
 
@@ -59,16 +54,32 @@ var BookItem = React.createClass({
 
     render: function() {
         return (
-            <div className="lala">
-                Title: {this.state.book.name} <br/>
-                Description: {this.state.book.description} <br/>
-                Authors: {this.state.book.autors.map(function (author) {
-                return <div><a href={'#/authors/' + author}>{this.state.authors[author].name
-                    }</a></div>;
-            }.bind(this))}
-                Genres: {this.state.book.genre.map(function (genre) {
-                return <div><a href={'#/genres/' + genre}>{this.state.genres[genre].name}</a></div>;
-            }.bind(this))}
+            <div className="col-md-12 col-sm-12 col-xs-12">
+                <div className="col-md-12 col-sm-12 col-xs-12">
+                    <span className="bookItem__title bookItem__title--title">Title: </span>
+                    <span className="bookItem__title bookItem__title--text"> {this.state.book.name}</span>
+                </div>
+                <div className="col-md-12 col-sm-12 col-xs-12">
+                    <span className="bookItem__description bookItem__description--title">Description: </span>
+                    <span className="bookItem__description bookItem__description--text"> {this.state.book.description}</span>
+                </div>
+                <div className="col-md-12 col-sm-12 col-xs-12">
+                    <span className="bookItem__authors bookItem__authors--title">Authors: </span>
+                    <span className="bookItem__authors bookItem__authors--text">
+                        {this.state.book.autors.map(function (author) {
+                            return <span><a href={'#/authors/' + author}>{this.state.authors[author].name
+                                }</a> | </span>;
+                        }.bind(this))}
+                    </span>
+                </div>
+                <div className="col-md-12 col-sm-12 col-xs-12">
+                    <span className="bookItem__genres bookItem__genres--title">Genres: </span>
+                    <span className="bookItem__genres bookItem__genres--text">
+                        {this.state.book.genre.map(function (genre) {
+                            return <span><a href={'#/genres/' + genre}>{this.state.genres[genre].name}</a> | </span>;
+                        }.bind(this))}
+                    </span>
+                </div>
             </div>
         );
     }

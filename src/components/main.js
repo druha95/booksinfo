@@ -12,8 +12,13 @@ var Route = Router.Route;
 
 var content = document.getElementById('content');
 
+// CSS
+require('normalize.css');
+require('../styles/main.less');
+require('../styles/bootstrap.css');
+
 var Routes = (
-    <Route path="/" name="root" >
+    <Route path="/" name="root">
         <Route path="/books" name="books" handler={BookList}/>
         <Route path="/books/:bookId" name="book" handler={BookItem}/>
         <Route path="/authors" name="authors" handler={Authors}/>

@@ -7,11 +7,6 @@
 var React = require('react/addons');
 var $ = require('jquery');
 
-// CSS
-require('normalize.css');
-require('../styles/main.css');
-
-
 var Authors = React.createClass({
 
     getInitialState: function() {
@@ -50,17 +45,23 @@ var Authors = React.createClass({
 
     getList: function(item, choosen) {
         if(item.name === choosen.name) {
-            return <div>{item.name} {item.books.map(function(book) {
-               return <div>{this.state.books[book].name}</div>;
-            }.bind(this))}</div>;
+            return <div className="dropdown">
+                <div className="dropdown__name">{item.name}</div>
+                <div className="dropdown__books"> {item.books.map(function(book) {
+                    return <div className="dropdown__books__book">{this.state.books[book].name}</div>;
+                    }.bind(this))}
+                </div>
+            </div>;
         }
     },
 
     render: function() {
         return (
-            <div className="lala">
+            <div className="col-md-12 col-sm-12 xol-xs-12">
                 {this.state.authors.map(function(item) {
-                    return <div onClick={this.select.bind(null, item)}>{item.name}<div>{this.getList(item, this.state.choosen)}</div></div>
+                    return <div className="dropdown_button" onClick={this.select.bind(null, item)}>{item.name}
+                        <div className="dropdown_wrapper">{this.getList(item, this.state.choosen)}</div>
+                    </div>
                         ;
                 }.bind(this))}
 

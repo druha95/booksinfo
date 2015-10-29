@@ -10,10 +10,6 @@ var $ = require('jquery');
 var BookAuthor = require('./BookAuthor');
 
 
-// CSS
-require('normalize.css');
-require('../styles/main.css');
-
 
 var BookList = React.createClass({
 
@@ -45,9 +41,11 @@ var BookList = React.createClass({
     render: function() {
 
         return (
-            <div className="lala">
+            <div className="col-md-12 col-xs-12 col-sm-12">
+                <div className="col-md-5 col-sm-6 col-xs-6 booklist_title">Book</div>
+                <div className="col-md-5 col-sm-6 col-xs-6 booklist_title">Authors</div>
             {this.state.books.map(function(item) {
-                return <div><BookAuthor book={item.name} bookId={item.id} author={item.autors} authors={this.state.authors}/></div>;
+                return <div className="col-md-12 col-xs-12 col-sm-12"><BookAuthor book={item.name} bookId={item.id} author={item.autors} authors={this.state.authors}/></div>;
             }.bind(this))}
             </div>
         );

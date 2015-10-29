@@ -6,10 +6,6 @@
 var React = require('react/addons');
 var $ = require('jquery');
 
-// CSS
-require('normalize.css');
-require('../styles/main.css');
-
 
 var AuthorItem = React.createClass({
 
@@ -47,13 +43,24 @@ var AuthorItem = React.createClass({
 
     render: function() {
         return (
-            <div className="lala">
-                Name: {this.state.author.name} <br/>
-                Biography: {this.state.author.biography} <br/>
-                Books: {this.state.author.books.map(function (book) {
-                return <div><a href={'#/books/' + this.state.books[book].id}>{this.state.books[book].name}</a></div>;
-            }.bind(this))}
+        <div className="col-md-12 col-sm-12 col-xs-12">
+            <div className="col-md-12 col-sm-12 col-xs-12">
+                <span className="authorItem__name authorItem__name--title">Name: </span>
+                <span className="authorItem__name authorItem__bane--text"> {this.state.author.name}</span>
             </div>
+            <div className="col-md-12 col-sm-12 col-xs-12">
+                <span className="authorItem__biography authorItem__biography--title">Biography: </span>
+                <span className="authorItem__biography authorItem__biography--text"> {this.state.author.biography}</span>
+            </div>
+            <div className="col-md-12 col-sm-12 col-xs-12">
+                <span className="authorItem__books authorItem__books--title">Books: </span>
+                <span className="authorItem__books authorItem__books--text">
+                        {this.state.author.books.map(function (book) {
+                            return <span><a href={'#/books/' + this.state.books[book].id}>{this.state.books[book].name}</a></span>;
+                        }.bind(this))}
+                </span>
+            </div>
+        </div>
         );
     }
 });

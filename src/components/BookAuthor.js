@@ -5,17 +5,14 @@
 
 var React = require('react/addons');
 
-// CSS
-require('normalize.css');
-require('../styles/main.css');
 
 
 var AuthorLink = React.createClass({
     render: function() {
         return (
-            <div className="lala">
-                <a href={'#/authors/' + this.props.id}>{this.props.author.name}</a>
-            </div>
+            <span className="lala">
+                <a href={'#/authors/' + this.props.id}>{this.props.author.name} |</a>
+            </span>
         );
     }
 });
@@ -24,12 +21,15 @@ var AuthorLink = React.createClass({
 var BookAuthor = React.createClass({
     render: function() {
         return (
-            <div className="lala">
-                <div><a href={'#/books/' + this.props.bookId}>{this.props.book}</a></div>
-                {this.props.author.map(function(item) {
-
-                    return <AuthorLink author={this.props.authors[item]} id={item}/>;
-                }.bind(this))}
+            <div className="col-md-12 col-sm-12 col-xs-12">
+                <div className="col-md-6 col-sm-6 col-xs-6">
+                    <a className="col-md-12 col-sm-12 col-xs-12" href={'#/books/' + this.props.bookId}>{this.props.book}</a>
+                </div>
+                <div className="col-md-6 col-sm-6 col-xs-6">
+                    {this.props.author.map(function(item) {
+                        return <AuthorLink author={this.props.authors[item]} id={item}/>;
+                    }.bind(this))}
+                </div>
             </div>
         );
     }
