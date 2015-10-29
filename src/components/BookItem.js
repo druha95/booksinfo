@@ -17,7 +17,7 @@ var BookItem = React.createClass({
             book: {
                 autors: [],
                 genre: [],
-                name: ""
+                name: ''
             },
             authors: [],
             genres: []

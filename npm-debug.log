@@ -1,1996 +1,707 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/andrew/.nvm/v0.10.36/bin/node',
 1 verbose cli   '/home/andrew/.nvm/v0.10.36/bin/npm',
-1 verbose cli   'install' ]
+1 verbose cli   'install',
+1 verbose cli   'react-router-bootstrap',
+1 verbose cli   '--save' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.36
 4 verbose readDependencies using package.json deps
-5 verbose install where, deps [ '/home/andrew/cybervision',
-5 verbose install   [ 'normalize.css',
-5 verbose install     'react',
-5 verbose install     'react-ajax',
-5 verbose install     'react-router',
-5 verbose install     'babel',
-5 verbose install     'babel-loader',
-5 verbose install     'grunt',
-5 verbose install     'eslint',
-5 verbose install     'eslint-loader',
-5 verbose install     'eslint-plugin-react',
-5 verbose install     'load-grunt-tasks',
-5 verbose install     'grunt-contrib-connect',
-5 verbose install     'grunt-webpack',
-5 verbose install     'jasmine-core',
-5 verbose install     'karma',
-5 verbose install     'karma-jasmine',
-5 verbose install     'karma-phantomjs-launcher',
-5 verbose install     'karma-script-launcher',
-5 verbose install     'karma-webpack',
-5 verbose install     'style-loader',
-5 verbose install     'url-loader',
-5 verbose install     'css-loader',
-5 verbose install     'grunt-karma',
-5 verbose install     'grunt-open',
-5 verbose install     'grunt-contrib-copy',
-5 verbose install     'grunt-contrib-clean',
-5 verbose install     'less-loader',
-5 verbose install     'react-hot-loader',
-5 verbose install     'webpack',
-5 verbose install     'webpack-dev-server' ] ]
-6 info preinstall cybervision@0.0.0
-7 verbose readDependencies using package.json deps
-8 verbose already installed skipping eslint-plugin-react@^2.4.0 /home/andrew/cybervision
-9 verbose already installed skipping load-grunt-tasks@~0.6.0 /home/andrew/cybervision
-10 verbose already installed skipping grunt-contrib-connect@~0.8.0 /home/andrew/cybervision
-11 verbose already installed skipping grunt-webpack@~1.0.8 /home/andrew/cybervision
-12 verbose already installed skipping jasmine-core@^2.3.4 /home/andrew/cybervision
-13 verbose already installed skipping karma@~0.12.21 /home/andrew/cybervision
-14 verbose already installed skipping karma-jasmine@^0.3.5 /home/andrew/cybervision
-15 verbose already installed skipping karma-phantomjs-launcher@~0.1.3 /home/andrew/cybervision
-16 verbose already installed skipping karma-script-launcher@~0.1.0 /home/andrew/cybervision
-17 verbose already installed skipping karma-webpack@^1.5.0 /home/andrew/cybervision
-18 verbose already installed skipping style-loader@~0.8.0 /home/andrew/cybervision
-19 verbose already installed skipping url-loader@~0.5.5 /home/andrew/cybervision
-20 verbose already installed skipping css-loader@~0.9.0 /home/andrew/cybervision
-21 verbose already installed skipping grunt-karma@~0.8.3 /home/andrew/cybervision
-22 verbose already installed skipping grunt-open@~0.2.3 /home/andrew/cybervision
-23 verbose already installed skipping grunt-contrib-copy@~0.5.0 /home/andrew/cybervision
-24 verbose already installed skipping grunt-contrib-clean@~0.6.0 /home/andrew/cybervision
-25 verbose already installed skipping less-loader@^2.0.0 /home/andrew/cybervision
-26 verbose already installed skipping react-hot-loader@^1.0.7 /home/andrew/cybervision
-27 verbose already installed skipping webpack@~1.10.0 /home/andrew/cybervision
-28 verbose already installed skipping webpack-dev-server@~1.10.0 /home/andrew/cybervision
-29 verbose already installed skipping normalize.css@~3.0.3 /home/andrew/cybervision
-30 verbose cache add [ 'react@^0.12.0', null ]
-31 verbose cache add name=undefined spec="react@^0.12.0" args=["react@^0.12.0",null]
-32 verbose parsed url { protocol: null,
-32 verbose parsed url   slashes: null,
-32 verbose parsed url   auth: null,
-32 verbose parsed url   host: null,
-32 verbose parsed url   port: null,
-32 verbose parsed url   hostname: null,
-32 verbose parsed url   hash: null,
-32 verbose parsed url   search: null,
-32 verbose parsed url   query: null,
-32 verbose parsed url   pathname: 'react@^0.12.0',
-32 verbose parsed url   path: 'react@^0.12.0',
-32 verbose parsed url   href: 'react@^0.12.0' }
-33 verbose already installed skipping react-ajax@^0.1.1 /home/andrew/cybervision
-34 verbose already installed skipping react-router@0.13.x /home/andrew/cybervision
-35 verbose already installed skipping babel@^5.0.0 /home/andrew/cybervision
-36 verbose already installed skipping babel-loader@^5.0.0 /home/andrew/cybervision
-37 verbose already installed skipping grunt@~0.4.5 /home/andrew/cybervision
-38 verbose already installed skipping eslint@^0.21.2 /home/andrew/cybervision
-39 verbose cache add name="react" spec="^0.12.0" args=["react","^0.12.0"]
-40 verbose parsed url { protocol: null,
-40 verbose parsed url   slashes: null,
-40 verbose parsed url   auth: null,
-40 verbose parsed url   host: null,
-40 verbose parsed url   port: null,
-40 verbose parsed url   hostname: null,
-40 verbose parsed url   hash: null,
-40 verbose parsed url   search: null,
-40 verbose parsed url   query: null,
-40 verbose parsed url   pathname: '^0.12.0',
-40 verbose parsed url   path: '^0.12.0',
-40 verbose parsed url   href: '^0.12.0' }
-41 verbose addNamed [ 'react', '^0.12.0' ]
-42 verbose addNamed [ null, '>=0.12.0-0 <0.13.0-0' ]
-43 verbose already installed skipping eslint-loader@^0.11.2 /home/andrew/cybervision
-44 silly lockFile fef31294-react-0-12-0 react@^0.12.0
-45 verbose lock react@^0.12.0 /home/andrew/.npm/fef31294-react-0-12-0.lock
-46 silly addNameRange { name: 'react', range: '>=0.12.0-0 <0.13.0-0', hasData: false }
-47 verbose request where is /react
-48 verbose request registry https://registry.npmjs.org/
-49 verbose request id 3a7c2287b1cf9c6e
-50 verbose url raw /react
-51 verbose url resolving [ 'https://registry.npmjs.org/', './react' ]
-52 verbose url resolved https://registry.npmjs.org/react
-53 verbose request where is https://registry.npmjs.org/react
-54 info trying registry request attempt 1 at 00:29:04
-55 verbose etag "DTE5UHM010AULYSP75HYFV45Z"
-56 http GET https://registry.npmjs.org/react
-57 http 304 https://registry.npmjs.org/react
-58 silly registry.get cb [ 304,
-58 silly registry.get   { date: 'Wed, 28 Oct 2015 22:29:05 GMT',
-58 silly registry.get     via: '1.1 varnish',
-58 silly registry.get     'cache-control': 'max-age=60',
-58 silly registry.get     etag: '"DTE5UHM010AULYSP75HYFV45Z"',
-58 silly registry.get     age: '6',
-58 silly registry.get     connection: 'keep-alive',
-58 silly registry.get     'x-served-by': 'cache-fra1242-FRA',
-58 silly registry.get     'x-cache': 'HIT',
-58 silly registry.get     'x-cache-hits': '2',
-58 silly registry.get     'x-timer': 'S1446071345.064814,VS0,VE0',
-58 silly registry.get     vary: 'Accept' } ]
-59 verbose etag https://registry.npmjs.org/react from cache
-60 silly addNameRange number 2 { name: 'react', range: '>=0.12.0-0 <0.13.0-0', hasData: true }
-61 silly addNameRange versions [ 'react',
-61 silly addNameRange   [ '0.0.1',
-61 silly addNameRange     '0.0.2',
-61 silly addNameRange     '0.0.3',
-61 silly addNameRange     '0.1.2',
-61 silly addNameRange     '0.2.0',
-61 silly addNameRange     '0.2.1',
-61 silly addNameRange     '0.2.2',
-61 silly addNameRange     '0.2.3',
-61 silly addNameRange     '0.2.4',
-61 silly addNameRange     '0.2.5',
-61 silly addNameRange     '0.2.6',
-61 silly addNameRange     '0.3.0',
-61 silly addNameRange     '0.3.4',
-61 silly addNameRange     '0.3.5',
-61 silly addNameRange     '0.5.0',
-61 silly addNameRange     '0.5.1',
-61 silly addNameRange     '0.5.2',
-61 silly addNameRange     '0.6.0',
-61 silly addNameRange     '0.6.1',
-61 silly addNameRange     '0.6.2',
-61 silly addNameRange     '0.6.3',
-61 silly addNameRange     '0.7.0',
-61 silly addNameRange     '0.7.1',
-61 silly addNameRange     '0.8.0',
-61 silly addNameRange     '0.9.0-rc1',
-61 silly addNameRange     '0.9.0',
-61 silly addNameRange     '0.10.0-rc1',
-61 silly addNameRange     '0.10.0',
-61 silly addNameRange     '0.11.0-rc1',
-61 silly addNameRange     '0.11.0',
-61 silly addNameRange     '0.11.1',
-61 silly addNameRange     '0.11.2',
-61 silly addNameRange     '0.12.0-rc1',
-61 silly addNameRange     '0.12.0',
-61 silly addNameRange     '0.12.1',
-61 silly addNameRange     '0.12.2',
-61 silly addNameRange     '0.13.0-alpha.1',
-61 silly addNameRange     '0.13.0-alpha.2',
-61 silly addNameRange     '0.13.0-beta.1',
-61 silly addNameRange     '0.13.0-beta.2',
-61 silly addNameRange     '0.13.0-rc1',
-61 silly addNameRange     '0.13.0-rc2',
-61 silly addNameRange     '0.13.0',
-61 silly addNameRange     '0.13.1',
-61 silly addNameRange     '0.13.2',
-61 silly addNameRange     '0.13.3',
-61 silly addNameRange     '0.14.0-alpha1',
-61 silly addNameRange     '0.14.0-alpha2',
-61 silly addNameRange     '0.14.0-alpha3',
-61 silly addNameRange     '0.14.0-beta1',
-61 silly addNameRange     '0.14.0-beta2',
-61 silly addNameRange     '0.14.0-beta3',
-61 silly addNameRange     '0.14.0-rc1',
-61 silly addNameRange     '0.14.0',
-61 silly addNameRange     '0.14.1' ] ]
-62 verbose addNamed [ 'react', '0.12.2' ]
-63 verbose addNamed [ '0.12.2', '0.12.2' ]
-64 silly lockFile 1f2cec02-react-0-12-2 react@0.12.2
-65 verbose lock react@0.12.2 /home/andrew/.npm/1f2cec02-react-0-12-2.lock
-66 silly lockFile 1f2cec02-react-0-12-2 react@0.12.2
-67 silly lockFile 1f2cec02-react-0-12-2 react@0.12.2
-68 silly lockFile fef31294-react-0-12-0 react@^0.12.0
-69 silly lockFile fef31294-react-0-12-0 react@^0.12.0
-70 silly resolved [ { name: 'react',
-70 silly resolved     description: 'React is a JavaScript library for building user interfaces.',
-70 silly resolved     version: '0.12.2',
-70 silly resolved     keywords: [ 'react' ],
-70 silly resolved     homepage: 'https://github.com/facebook/react/tree/master/npm-react',
-70 silly resolved     bugs: { url: 'https://github.com/facebook/react/issues?labels=react-core' },
-70 silly resolved     license: 'BSD-3-Clause',
-70 silly resolved     files: [ 'README.md', 'addons.js', 'react.js', 'dist/', 'lib/' ],
-70 silly resolved     main: 'react.js',
-70 silly resolved     repository: { type: 'git', url: 'https://github.com/facebook/react' },
-70 silly resolved     engines: { node: '>=0.10.0' },
-70 silly resolved     dependencies: { envify: '^3.0.0' },
-70 silly resolved     browserify: { transform: [Object] },
-70 silly resolved     _id: 'react@0.12.2',
-70 silly resolved     _shasum: '1c4f0b08818146eeab4f0ab39257e0aa52027e00',
-70 silly resolved     _resolved: 'https://registry.npmjs.org/react/-/react-0.12.2.tgz',
-70 silly resolved     _from: 'react@^0.12.0',
-70 silly resolved     scripts: {},
-70 silly resolved     _npmVersion: '2.1.11',
-70 silly resolved     _nodeVersion: '0.10.32',
-70 silly resolved     _npmUser: { name: 'zpao', email: 'paul@oshannessy.com' },
-70 silly resolved     maintainers: [ [Object], [Object] ],
-70 silly resolved     dist:
-70 silly resolved      { shasum: '1c4f0b08818146eeab4f0ab39257e0aa52027e00',
-70 silly resolved        tarball: 'http://registry.npmjs.org/react/-/react-0.12.2.tgz' },
-70 silly resolved     directories: {},
-70 silly resolved     readme: 'ERROR: No README data found!' } ]
-71 info install react@0.12.2 into /home/andrew/cybervision
-72 info installOne react@0.12.2
-73 verbose node_modules/react unbuild
-74 info preuninstall react@0.13.3
-75 info uninstall react@0.13.3
-76 verbose true,/home/andrew/cybervision/node_modules,/home/andrew/cybervision/node_modules unbuild react@0.13.3
-77 info postuninstall react@0.13.3
-78 verbose tar unpack /home/andrew/.npm/react/0.12.2/package.tgz
-79 silly lockFile 8ec91d34-w-cybervision-node-modules-react tar:///home/andrew/cybervision/node_modules/react
-80 verbose lock tar:///home/andrew/cybervision/node_modules/react /home/andrew/.npm/8ec91d34-w-cybervision-node-modules-react.lock
-81 silly lockFile c543c713-rew-npm-react-0-12-2-package-tgz tar:///home/andrew/.npm/react/0.12.2/package.tgz
-82 verbose lock tar:///home/andrew/.npm/react/0.12.2/package.tgz /home/andrew/.npm/c543c713-rew-npm-react-0-12-2-package-tgz.lock
-83 silly gunzTarPerm modes [ '775', '664' ]
-84 silly gunzTarPerm extractEntry package.json
-85 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
-86 silly gunzTarPerm extractEntry README.md
-87 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
-88 silly gunzTarPerm extractEntry addons.js
-89 silly gunzTarPerm modified mode [ 'addons.js', 420, 436 ]
-90 silly gunzTarPerm extractEntry react.js
-91 silly gunzTarPerm modified mode [ 'react.js', 420, 436 ]
-92 silly gunzTarPerm extractEntry dist/JSXTransformer.js
-93 silly gunzTarPerm modified mode [ 'dist/JSXTransformer.js', 420, 436 ]
-94 silly gunzTarPerm extractEntry dist/react-with-addons.js
-95 silly gunzTarPerm modified mode [ 'dist/react-with-addons.js', 420, 436 ]
-96 silly gunzTarPerm extractEntry dist/react-with-addons.min.js
-97 silly gunzTarPerm modified mode [ 'dist/react-with-addons.min.js', 420, 436 ]
-98 silly gunzTarPerm extractEntry dist/react.js
-99 silly gunzTarPerm modified mode [ 'dist/react.js', 420, 436 ]
-100 silly gunzTarPerm extractEntry dist/react.min.js
-101 silly gunzTarPerm modified mode [ 'dist/react.min.js', 420, 436 ]
-102 silly gunzTarPerm extractEntry lib/AutoFocusMixin.js
-103 silly gunzTarPerm modified mode [ 'lib/AutoFocusMixin.js', 420, 436 ]
-104 silly gunzTarPerm extractEntry lib/ReactPutListenerQueue.js
-105 silly gunzTarPerm modified mode [ 'lib/ReactPutListenerQueue.js', 420, 436 ]
-106 silly gunzTarPerm extractEntry lib/ReactReconcileTransaction.js
-107 silly gunzTarPerm modified mode [ 'lib/ReactReconcileTransaction.js', 420, 436 ]
-108 silly gunzTarPerm extractEntry lib/ReactRootIndex.js
-109 silly gunzTarPerm modified mode [ 'lib/ReactRootIndex.js', 420, 436 ]
-110 silly gunzTarPerm extractEntry lib/ReactPropTypes.js
-111 silly gunzTarPerm modified mode [ 'lib/ReactPropTypes.js', 420, 436 ]
-112 silly gunzTarPerm extractEntry lib/ReactServerRenderingTransaction.js
-113 silly gunzTarPerm modified mode [ 'lib/ReactServerRenderingTransaction.js', 420, 436 ]
-114 silly gunzTarPerm extractEntry lib/ReactStateSetters.js
-115 silly gunzTarPerm modified mode [ 'lib/ReactStateSetters.js', 420, 436 ]
-116 silly gunzTarPerm extractEntry lib/ReactTestUtils.js
-117 silly gunzTarPerm modified mode [ 'lib/ReactTestUtils.js', 420, 436 ]
-118 silly gunzTarPerm extractEntry lib/ReactTextComponent.js
-119 silly gunzTarPerm modified mode [ 'lib/ReactTextComponent.js', 420, 436 ]
-120 silly gunzTarPerm extractEntry lib/ReactTransitionChildMapping.js
-121 silly gunzTarPerm modified mode [ 'lib/ReactTransitionChildMapping.js', 420, 436 ]
-122 silly gunzTarPerm extractEntry lib/ReactPropTypeLocations.js
-123 silly gunzTarPerm modified mode [ 'lib/ReactPropTypeLocations.js', 420, 436 ]
-124 silly gunzTarPerm extractEntry lib/ReactTransitionEvents.js
-125 silly gunzTarPerm modified mode [ 'lib/ReactTransitionEvents.js', 420, 436 ]
-126 silly gunzTarPerm extractEntry lib/ReactPropTypeLocationNames.js
-127 silly gunzTarPerm modified mode [ 'lib/ReactPropTypeLocationNames.js', 420, 436 ]
-128 silly gunzTarPerm extractEntry lib/ReactTransitionGroup.js
-129 silly gunzTarPerm modified mode [ 'lib/ReactTransitionGroup.js', 420, 436 ]
-130 silly gunzTarPerm extractEntry lib/ReactPropTransferer.js
-131 silly gunzTarPerm modified mode [ 'lib/ReactPropTransferer.js', 420, 436 ]
-132 silly gunzTarPerm extractEntry lib/ReactUpdates.js
-133 silly gunzTarPerm modified mode [ 'lib/ReactUpdates.js', 420, 436 ]
-134 silly gunzTarPerm extractEntry lib/ReactPerf.js
-135 silly gunzTarPerm modified mode [ 'lib/ReactPerf.js', 420, 436 ]
-136 silly gunzTarPerm extractEntry lib/ReactWithAddons.js
-137 silly gunzTarPerm modified mode [ 'lib/ReactWithAddons.js', 420, 436 ]
-138 silly gunzTarPerm extractEntry lib/ReactOwner.js
-139 silly gunzTarPerm modified mode [ 'lib/ReactOwner.js', 420, 436 ]
-140 silly gunzTarPerm extractEntry lib/SVGDOMPropertyConfig.js
-141 silly gunzTarPerm modified mode [ 'lib/SVGDOMPropertyConfig.js', 420, 436 ]
-142 silly gunzTarPerm extractEntry lib/ReactNativeComponent.js
-143 silly gunzTarPerm modified mode [ 'lib/ReactNativeComponent.js', 420, 436 ]
-144 silly gunzTarPerm extractEntry lib/SelectEventPlugin.js
-145 silly gunzTarPerm modified mode [ 'lib/SelectEventPlugin.js', 420, 436 ]
-146 silly gunzTarPerm extractEntry lib/ReactMultiChildUpdateTypes.js
-147 silly gunzTarPerm modified mode [ 'lib/ReactMultiChildUpdateTypes.js', 420, 436 ]
-148 silly gunzTarPerm extractEntry lib/ServerReactRootIndex.js
-149 silly gunzTarPerm modified mode [ 'lib/ServerReactRootIndex.js', 420, 436 ]
-150 silly gunzTarPerm extractEntry lib/ReactMultiChild.js
-151 silly gunzTarPerm modified mode [ 'lib/ReactMultiChild.js', 420, 436 ]
-152 silly gunzTarPerm extractEntry lib/SimpleEventPlugin.js
-153 silly gunzTarPerm modified mode [ 'lib/SimpleEventPlugin.js', 420, 436 ]
-154 silly gunzTarPerm extractEntry lib/ReactMount.js
-155 silly gunzTarPerm modified mode [ 'lib/ReactMount.js', 420, 436 ]
-156 silly gunzTarPerm extractEntry lib/SyntheticClipboardEvent.js
-157 silly gunzTarPerm modified mode [ 'lib/SyntheticClipboardEvent.js', 420, 436 ]
-158 silly gunzTarPerm extractEntry lib/ReactMarkupChecksum.js
-159 silly gunzTarPerm modified mode [ 'lib/ReactMarkupChecksum.js', 420, 436 ]
-160 silly gunzTarPerm extractEntry lib/SyntheticCompositionEvent.js
-161 silly gunzTarPerm modified mode [ 'lib/SyntheticCompositionEvent.js', 420, 436 ]
-162 silly gunzTarPerm extractEntry lib/ReactLink.js
-163 silly gunzTarPerm modified mode [ 'lib/ReactLink.js', 420, 436 ]
-164 silly gunzTarPerm extractEntry lib/SyntheticDragEvent.js
-165 silly gunzTarPerm modified mode [ 'lib/SyntheticDragEvent.js', 420, 436 ]
-166 silly gunzTarPerm extractEntry lib/ReactLegacyElement.js
-167 silly gunzTarPerm modified mode [ 'lib/ReactLegacyElement.js', 420, 436 ]
-168 silly gunzTarPerm extractEntry lib/SyntheticEvent.js
-169 silly gunzTarPerm modified mode [ 'lib/SyntheticEvent.js', 420, 436 ]
-170 silly gunzTarPerm extractEntry lib/ReactInstanceHandles.js
-171 silly gunzTarPerm modified mode [ 'lib/ReactInstanceHandles.js', 420, 436 ]
-172 silly gunzTarPerm extractEntry lib/SyntheticFocusEvent.js
-173 silly gunzTarPerm modified mode [ 'lib/SyntheticFocusEvent.js', 420, 436 ]
-174 silly gunzTarPerm extractEntry lib/ReactInputSelection.js
-175 silly gunzTarPerm modified mode [ 'lib/ReactInputSelection.js', 420, 436 ]
-176 silly gunzTarPerm extractEntry lib/SyntheticInputEvent.js
-177 silly gunzTarPerm modified mode [ 'lib/SyntheticInputEvent.js', 420, 436 ]
-178 silly gunzTarPerm extractEntry lib/ReactInjection.js
-179 silly gunzTarPerm modified mode [ 'lib/ReactInjection.js', 420, 436 ]
-180 silly gunzTarPerm extractEntry lib/SyntheticKeyboardEvent.js
-181 silly gunzTarPerm modified mode [ 'lib/SyntheticKeyboardEvent.js', 420, 436 ]
-182 silly gunzTarPerm extractEntry lib/ReactEventListener.js
-183 silly gunzTarPerm modified mode [ 'lib/ReactEventListener.js', 420, 436 ]
-184 silly gunzTarPerm extractEntry lib/SyntheticMouseEvent.js
-185 silly gunzTarPerm modified mode [ 'lib/SyntheticMouseEvent.js', 420, 436 ]
-186 silly gunzTarPerm extractEntry lib/ReactEventEmitterMixin.js
-187 silly gunzTarPerm modified mode [ 'lib/ReactEventEmitterMixin.js', 420, 436 ]
-188 silly gunzTarPerm extractEntry lib/SyntheticTouchEvent.js
-189 silly gunzTarPerm modified mode [ 'lib/SyntheticTouchEvent.js', 420, 436 ]
-190 silly gunzTarPerm extractEntry lib/ReactErrorUtils.js
-191 silly gunzTarPerm modified mode [ 'lib/ReactErrorUtils.js', 420, 436 ]
-192 silly gunzTarPerm extractEntry lib/SyntheticUIEvent.js
-193 silly gunzTarPerm modified mode [ 'lib/SyntheticUIEvent.js', 420, 436 ]
-194 silly gunzTarPerm extractEntry lib/ReactEmptyComponent.js
-195 silly gunzTarPerm modified mode [ 'lib/ReactEmptyComponent.js', 420, 436 ]
-196 silly gunzTarPerm extractEntry lib/SyntheticWheelEvent.js
-197 silly gunzTarPerm modified mode [ 'lib/SyntheticWheelEvent.js', 420, 436 ]
-198 silly gunzTarPerm extractEntry lib/ReactElementValidator.js
-199 silly gunzTarPerm modified mode [ 'lib/ReactElementValidator.js', 420, 436 ]
-200 silly gunzTarPerm extractEntry lib/Transaction.js
-201 silly gunzTarPerm modified mode [ 'lib/Transaction.js', 420, 436 ]
-202 silly gunzTarPerm extractEntry lib/ReactElement.js
-203 silly gunzTarPerm modified mode [ 'lib/ReactElement.js', 420, 436 ]
-204 silly gunzTarPerm extractEntry lib/ViewportMetrics.js
-205 silly gunzTarPerm modified mode [ 'lib/ViewportMetrics.js', 420, 436 ]
-206 silly gunzTarPerm extractEntry lib/ReactDefaultPerfAnalysis.js
-207 silly gunzTarPerm modified mode [ 'lib/ReactDefaultPerfAnalysis.js', 420, 436 ]
-208 silly gunzTarPerm extractEntry lib/accumulateInto.js
-209 silly gunzTarPerm modified mode [ 'lib/accumulateInto.js', 420, 436 ]
-210 silly gunzTarPerm extractEntry lib/ReactDefaultPerf.js
-211 silly gunzTarPerm modified mode [ 'lib/ReactDefaultPerf.js', 420, 436 ]
-212 silly gunzTarPerm extractEntry lib/adler32.js
-213 silly gunzTarPerm modified mode [ 'lib/adler32.js', 420, 436 ]
-214 silly gunzTarPerm extractEntry lib/ReactDefaultInjection.js
-215 silly gunzTarPerm modified mode [ 'lib/ReactDefaultInjection.js', 420, 436 ]
-216 silly gunzTarPerm extractEntry lib/camelize.js
-217 silly gunzTarPerm modified mode [ 'lib/camelize.js', 420, 436 ]
-218 silly gunzTarPerm extractEntry lib/ReactDefaultBatchingStrategy.js
-219 silly gunzTarPerm modified mode [ 'lib/ReactDefaultBatchingStrategy.js', 420, 436 ]
-220 silly gunzTarPerm extractEntry lib/camelizeStyleName.js
-221 silly gunzTarPerm modified mode [ 'lib/camelizeStyleName.js', 420, 436 ]
-222 silly gunzTarPerm extractEntry lib/ReactDOMTextarea.js
-223 silly gunzTarPerm modified mode [ 'lib/ReactDOMTextarea.js', 420, 436 ]
-224 silly gunzTarPerm extractEntry lib/cloneWithProps.js
-225 silly gunzTarPerm modified mode [ 'lib/cloneWithProps.js', 420, 436 ]
-226 silly gunzTarPerm extractEntry lib/ReactDOMSelection.js
-227 silly gunzTarPerm modified mode [ 'lib/ReactDOMSelection.js', 420, 436 ]
-228 silly gunzTarPerm extractEntry lib/containsNode.js
-229 silly gunzTarPerm modified mode [ 'lib/containsNode.js', 420, 436 ]
-230 silly gunzTarPerm extractEntry lib/ReactDOMSelect.js
-231 silly gunzTarPerm modified mode [ 'lib/ReactDOMSelect.js', 420, 436 ]
-232 silly gunzTarPerm extractEntry lib/copyProperties.js
-233 silly gunzTarPerm modified mode [ 'lib/copyProperties.js', 420, 436 ]
-234 silly gunzTarPerm extractEntry lib/ReactDOMOption.js
-235 silly gunzTarPerm modified mode [ 'lib/ReactDOMOption.js', 420, 436 ]
-236 silly gunzTarPerm extractEntry lib/createArrayFrom.js
-237 silly gunzTarPerm modified mode [ 'lib/createArrayFrom.js', 420, 436 ]
-238 silly gunzTarPerm extractEntry lib/ReactDOMInput.js
-239 silly gunzTarPerm modified mode [ 'lib/ReactDOMInput.js', 420, 436 ]
-240 silly gunzTarPerm extractEntry lib/createFullPageComponent.js
-241 silly gunzTarPerm modified mode [ 'lib/createFullPageComponent.js', 420, 436 ]
-242 silly gunzTarPerm extractEntry lib/ReactDOMImg.js
-243 silly gunzTarPerm modified mode [ 'lib/ReactDOMImg.js', 420, 436 ]
-244 silly gunzTarPerm extractEntry lib/createNodesFromMarkup.js
-245 silly gunzTarPerm modified mode [ 'lib/createNodesFromMarkup.js', 420, 436 ]
-246 silly gunzTarPerm extractEntry lib/ReactDOMIDOperations.js
-247 silly gunzTarPerm modified mode [ 'lib/ReactDOMIDOperations.js', 420, 436 ]
-248 silly gunzTarPerm extractEntry lib/cx.js
-249 silly gunzTarPerm modified mode [ 'lib/cx.js', 420, 436 ]
-250 silly gunzTarPerm extractEntry lib/ReactDOMForm.js
-251 silly gunzTarPerm modified mode [ 'lib/ReactDOMForm.js', 420, 436 ]
-252 silly gunzTarPerm extractEntry lib/dangerousStyleValue.js
-253 silly gunzTarPerm modified mode [ 'lib/dangerousStyleValue.js', 420, 436 ]
-254 silly gunzTarPerm extractEntry lib/ReactDOMComponent.js
-255 silly gunzTarPerm modified mode [ 'lib/ReactDOMComponent.js', 420, 436 ]
-256 silly gunzTarPerm extractEntry lib/deprecated.js
-257 silly gunzTarPerm modified mode [ 'lib/deprecated.js', 420, 436 ]
-258 silly gunzTarPerm extractEntry lib/ReactDOMButton.js
-259 silly gunzTarPerm modified mode [ 'lib/ReactDOMButton.js', 420, 436 ]
-260 silly gunzTarPerm extractEntry lib/emptyFunction.js
-261 silly gunzTarPerm modified mode [ 'lib/emptyFunction.js', 420, 436 ]
-262 silly gunzTarPerm extractEntry lib/ReactDOM.js
-263 silly gunzTarPerm modified mode [ 'lib/ReactDOM.js', 420, 436 ]
-264 silly gunzTarPerm extractEntry lib/emptyObject.js
-265 silly gunzTarPerm modified mode [ 'lib/emptyObject.js', 420, 436 ]
-266 silly gunzTarPerm extractEntry lib/ReactCurrentOwner.js
-267 silly gunzTarPerm modified mode [ 'lib/ReactCurrentOwner.js', 420, 436 ]
-268 silly gunzTarPerm extractEntry lib/escapeTextForBrowser.js
-269 silly gunzTarPerm modified mode [ 'lib/escapeTextForBrowser.js', 420, 436 ]
-270 silly gunzTarPerm extractEntry lib/ReactContext.js
-271 silly gunzTarPerm modified mode [ 'lib/ReactContext.js', 420, 436 ]
-272 silly gunzTarPerm extractEntry lib/flattenChildren.js
-273 silly gunzTarPerm modified mode [ 'lib/flattenChildren.js', 420, 436 ]
-274 silly gunzTarPerm extractEntry lib/ReactCompositeComponent.js
-275 silly gunzTarPerm modified mode [ 'lib/ReactCompositeComponent.js', 420, 436 ]
-276 silly gunzTarPerm extractEntry lib/focusNode.js
-277 silly gunzTarPerm modified mode [ 'lib/focusNode.js', 420, 436 ]
-278 silly gunzTarPerm extractEntry lib/ReactComponentWithPureRenderMixin.js
-279 silly gunzTarPerm modified mode [ 'lib/ReactComponentWithPureRenderMixin.js', 420, 436 ]
-280 silly gunzTarPerm extractEntry lib/forEachAccumulated.js
-281 silly gunzTarPerm modified mode [ 'lib/forEachAccumulated.js', 420, 436 ]
-282 silly gunzTarPerm extractEntry lib/ReactComponentBrowserEnvironment.js
-283 silly gunzTarPerm modified mode [ 'lib/ReactComponentBrowserEnvironment.js', 420, 436 ]
-284 silly gunzTarPerm extractEntry lib/getActiveElement.js
-285 silly gunzTarPerm modified mode [ 'lib/getActiveElement.js', 420, 436 ]
-286 silly gunzTarPerm extractEntry lib/ReactComponent.js
-287 silly gunzTarPerm modified mode [ 'lib/ReactComponent.js', 420, 436 ]
-288 silly gunzTarPerm extractEntry lib/getEventCharCode.js
-289 silly gunzTarPerm modified mode [ 'lib/getEventCharCode.js', 420, 436 ]
-290 silly gunzTarPerm extractEntry lib/ReactChildren.js
-291 silly gunzTarPerm modified mode [ 'lib/ReactChildren.js', 420, 436 ]
-292 silly gunzTarPerm extractEntry lib/getEventKey.js
-293 silly gunzTarPerm modified mode [ 'lib/getEventKey.js', 420, 436 ]
-294 silly gunzTarPerm extractEntry lib/ReactCSSTransitionGroupChild.js
-295 silly gunzTarPerm modified mode [ 'lib/ReactCSSTransitionGroupChild.js', 420, 436 ]
-296 silly gunzTarPerm extractEntry lib/getEventModifierState.js
-297 silly gunzTarPerm modified mode [ 'lib/getEventModifierState.js', 420, 436 ]
-298 silly gunzTarPerm extractEntry lib/ReactCSSTransitionGroup.js
-299 silly gunzTarPerm modified mode [ 'lib/ReactCSSTransitionGroup.js', 420, 436 ]
-300 silly gunzTarPerm extractEntry lib/getEventTarget.js
-301 silly gunzTarPerm modified mode [ 'lib/getEventTarget.js', 420, 436 ]
-302 silly gunzTarPerm extractEntry lib/ReactBrowserEventEmitter.js
-303 silly gunzTarPerm modified mode [ 'lib/ReactBrowserEventEmitter.js', 420, 436 ]
-304 silly gunzTarPerm extractEntry lib/getMarkupWrap.js
-305 silly gunzTarPerm modified mode [ 'lib/getMarkupWrap.js', 420, 436 ]
-306 silly gunzTarPerm extractEntry lib/ReactBrowserComponentMixin.js
-307 silly gunzTarPerm modified mode [ 'lib/ReactBrowserComponentMixin.js', 420, 436 ]
-308 silly gunzTarPerm extractEntry lib/getNodeForCharacterOffset.js
-309 silly gunzTarPerm modified mode [ 'lib/getNodeForCharacterOffset.js', 420, 436 ]
-310 silly gunzTarPerm extractEntry lib/React.js
-311 silly gunzTarPerm modified mode [ 'lib/React.js', 420, 436 ]
-312 silly gunzTarPerm extractEntry lib/getReactRootElementInContainer.js
-313 silly gunzTarPerm modified mode [ 'lib/getReactRootElementInContainer.js', 420, 436 ]
-314 silly gunzTarPerm extractEntry lib/PooledClass.js
-315 silly gunzTarPerm modified mode [ 'lib/PooledClass.js', 420, 436 ]
-316 silly gunzTarPerm extractEntry lib/getTextContentAccessor.js
-317 silly gunzTarPerm modified mode [ 'lib/getTextContentAccessor.js', 420, 436 ]
-318 silly gunzTarPerm extractEntry lib/Object.assign.js
-319 silly gunzTarPerm modified mode [ 'lib/Object.assign.js', 420, 436 ]
-320 silly gunzTarPerm extractEntry lib/getUnboundedScrollPosition.js
-321 silly gunzTarPerm modified mode [ 'lib/getUnboundedScrollPosition.js', 420, 436 ]
-322 silly gunzTarPerm extractEntry lib/MobileSafariClickEventPlugin.js
-323 silly gunzTarPerm modified mode [ 'lib/MobileSafariClickEventPlugin.js', 420, 436 ]
-324 silly gunzTarPerm extractEntry lib/hyphenate.js
-325 silly gunzTarPerm modified mode [ 'lib/hyphenate.js', 420, 436 ]
-326 silly gunzTarPerm extractEntry lib/LocalEventTrapMixin.js
-327 silly gunzTarPerm modified mode [ 'lib/LocalEventTrapMixin.js', 420, 436 ]
-328 silly gunzTarPerm extractEntry lib/hyphenateStyleName.js
-329 silly gunzTarPerm modified mode [ 'lib/hyphenateStyleName.js', 420, 436 ]
-330 silly gunzTarPerm extractEntry lib/LinkedValueUtils.js
-331 silly gunzTarPerm modified mode [ 'lib/LinkedValueUtils.js', 420, 436 ]
-332 silly gunzTarPerm extractEntry lib/instantiateReactComponent.js
-333 silly gunzTarPerm modified mode [ 'lib/instantiateReactComponent.js', 420, 436 ]
-334 silly gunzTarPerm extractEntry lib/LinkedStateMixin.js
-335 silly gunzTarPerm modified mode [ 'lib/LinkedStateMixin.js', 420, 436 ]
-336 silly gunzTarPerm extractEntry lib/invariant.js
-337 silly gunzTarPerm modified mode [ 'lib/invariant.js', 420, 436 ]
-338 silly gunzTarPerm extractEntry lib/HTMLDOMPropertyConfig.js
-339 silly gunzTarPerm modified mode [ 'lib/HTMLDOMPropertyConfig.js', 420, 436 ]
-340 silly gunzTarPerm extractEntry lib/isEventSupported.js
-341 silly gunzTarPerm modified mode [ 'lib/isEventSupported.js', 420, 436 ]
-342 silly gunzTarPerm extractEntry lib/ExecutionEnvironment.js
-343 silly gunzTarPerm modified mode [ 'lib/ExecutionEnvironment.js', 420, 436 ]
-344 silly gunzTarPerm extractEntry lib/isNode.js
-345 silly gunzTarPerm modified mode [ 'lib/isNode.js', 420, 436 ]
-346 silly gunzTarPerm extractEntry lib/EventPropagators.js
-347 silly gunzTarPerm modified mode [ 'lib/EventPropagators.js', 420, 436 ]
-348 silly gunzTarPerm extractEntry lib/isTextInputElement.js
-349 silly gunzTarPerm modified mode [ 'lib/isTextInputElement.js', 420, 436 ]
-350 silly gunzTarPerm extractEntry lib/EventPluginUtils.js
-351 silly gunzTarPerm modified mode [ 'lib/EventPluginUtils.js', 420, 436 ]
-352 silly gunzTarPerm extractEntry lib/isTextNode.js
-353 silly gunzTarPerm modified mode [ 'lib/isTextNode.js', 420, 436 ]
-354 silly gunzTarPerm extractEntry lib/EventPluginRegistry.js
-355 silly gunzTarPerm modified mode [ 'lib/EventPluginRegistry.js', 420, 436 ]
-356 silly gunzTarPerm extractEntry lib/joinClasses.js
-357 silly gunzTarPerm modified mode [ 'lib/joinClasses.js', 420, 436 ]
-358 silly gunzTarPerm extractEntry lib/EventPluginHub.js
-359 silly gunzTarPerm modified mode [ 'lib/EventPluginHub.js', 420, 436 ]
-360 silly gunzTarPerm extractEntry lib/keyMirror.js
-361 silly gunzTarPerm modified mode [ 'lib/keyMirror.js', 420, 436 ]
-362 silly gunzTarPerm extractEntry lib/EventListener.js
-363 silly gunzTarPerm modified mode [ 'lib/EventListener.js', 420, 436 ]
-364 silly gunzTarPerm extractEntry lib/keyOf.js
-365 silly gunzTarPerm modified mode [ 'lib/keyOf.js', 420, 436 ]
-366 silly gunzTarPerm extractEntry lib/EventConstants.js
-367 silly gunzTarPerm modified mode [ 'lib/EventConstants.js', 420, 436 ]
-368 silly gunzTarPerm extractEntry lib/mapObject.js
-369 silly gunzTarPerm modified mode [ 'lib/mapObject.js', 420, 436 ]
-370 silly gunzTarPerm extractEntry lib/EnterLeaveEventPlugin.js
-371 silly gunzTarPerm modified mode [ 'lib/EnterLeaveEventPlugin.js', 420, 436 ]
-372 silly gunzTarPerm extractEntry lib/memoizeStringOnly.js
-373 silly gunzTarPerm modified mode [ 'lib/memoizeStringOnly.js', 420, 436 ]
-374 silly gunzTarPerm extractEntry lib/DefaultEventPluginOrder.js
-375 silly gunzTarPerm modified mode [ 'lib/DefaultEventPluginOrder.js', 420, 436 ]
-376 silly gunzTarPerm extractEntry lib/merge.js
-377 silly gunzTarPerm modified mode [ 'lib/merge.js', 420, 436 ]
-378 silly gunzTarPerm extractEntry lib/Danger.js
-379 silly gunzTarPerm modified mode [ 'lib/Danger.js', 420, 436 ]
-380 silly gunzTarPerm extractEntry lib/mergeInto.js
-381 silly gunzTarPerm modified mode [ 'lib/mergeInto.js', 420, 436 ]
-382 silly gunzTarPerm extractEntry lib/DOMPropertyOperations.js
-383 silly gunzTarPerm modified mode [ 'lib/DOMPropertyOperations.js', 420, 436 ]
-384 silly gunzTarPerm extractEntry lib/monitorCodeUse.js
-385 silly gunzTarPerm modified mode [ 'lib/monitorCodeUse.js', 420, 436 ]
-386 silly gunzTarPerm extractEntry lib/DOMProperty.js
-387 silly gunzTarPerm modified mode [ 'lib/DOMProperty.js', 420, 436 ]
-388 silly gunzTarPerm extractEntry lib/onlyChild.js
-389 silly gunzTarPerm modified mode [ 'lib/onlyChild.js', 420, 436 ]
-390 silly gunzTarPerm extractEntry lib/DOMChildrenOperations.js
-391 silly gunzTarPerm modified mode [ 'lib/DOMChildrenOperations.js', 420, 436 ]
-392 silly gunzTarPerm extractEntry lib/performance.js
-393 silly gunzTarPerm modified mode [ 'lib/performance.js', 420, 436 ]
-394 silly gunzTarPerm extractEntry lib/CompositionEventPlugin.js
-395 silly gunzTarPerm modified mode [ 'lib/CompositionEventPlugin.js', 420, 436 ]
-396 silly gunzTarPerm extractEntry lib/performanceNow.js
-397 silly gunzTarPerm modified mode [ 'lib/performanceNow.js', 420, 436 ]
-398 silly gunzTarPerm extractEntry lib/ClientReactRootIndex.js
-399 silly gunzTarPerm modified mode [ 'lib/ClientReactRootIndex.js', 420, 436 ]
-400 silly gunzTarPerm extractEntry lib/setInnerHTML.js
-401 silly gunzTarPerm modified mode [ 'lib/setInnerHTML.js', 420, 436 ]
-402 silly gunzTarPerm extractEntry lib/ChangeEventPlugin.js
-403 silly gunzTarPerm modified mode [ 'lib/ChangeEventPlugin.js', 420, 436 ]
-404 silly gunzTarPerm extractEntry lib/shallowEqual.js
-405 silly gunzTarPerm modified mode [ 'lib/shallowEqual.js', 420, 436 ]
-406 silly gunzTarPerm extractEntry lib/CallbackQueue.js
-407 silly gunzTarPerm modified mode [ 'lib/CallbackQueue.js', 420, 436 ]
-408 silly gunzTarPerm extractEntry lib/shouldUpdateReactComponent.js
-409 silly gunzTarPerm modified mode [ 'lib/shouldUpdateReactComponent.js', 420, 436 ]
-410 silly gunzTarPerm extractEntry lib/CSSPropertyOperations.js
-411 silly gunzTarPerm modified mode [ 'lib/CSSPropertyOperations.js', 420, 436 ]
-412 silly gunzTarPerm extractEntry lib/toArray.js
-413 silly gunzTarPerm modified mode [ 'lib/toArray.js', 420, 436 ]
-414 silly gunzTarPerm extractEntry lib/CSSProperty.js
-415 silly gunzTarPerm modified mode [ 'lib/CSSProperty.js', 420, 436 ]
-416 silly gunzTarPerm extractEntry lib/traverseAllChildren.js
-417 silly gunzTarPerm modified mode [ 'lib/traverseAllChildren.js', 420, 436 ]
-418 silly gunzTarPerm extractEntry lib/CSSCore.js
-419 silly gunzTarPerm modified mode [ 'lib/CSSCore.js', 420, 436 ]
-420 silly gunzTarPerm extractEntry lib/update.js
-421 silly gunzTarPerm modified mode [ 'lib/update.js', 420, 436 ]
-422 silly gunzTarPerm extractEntry lib/BeforeInputEventPlugin.js
-423 silly gunzTarPerm modified mode [ 'lib/BeforeInputEventPlugin.js', 420, 436 ]
-424 silly gunzTarPerm extractEntry lib/warning.js
-425 silly gunzTarPerm modified mode [ 'lib/warning.js', 420, 436 ]
-426 silly gunzTarPerm extractEntry lib/ReactServerRendering.js
-427 silly gunzTarPerm modified mode [ 'lib/ReactServerRendering.js', 420, 436 ]
-428 silly lockFile 8ec91d34-w-cybervision-node-modules-react tar:///home/andrew/cybervision/node_modules/react
-429 silly lockFile 8ec91d34-w-cybervision-node-modules-react tar:///home/andrew/cybervision/node_modules/react
-430 silly lockFile c543c713-rew-npm-react-0-12-2-package-tgz tar:///home/andrew/.npm/react/0.12.2/package.tgz
-431 silly lockFile c543c713-rew-npm-react-0-12-2-package-tgz tar:///home/andrew/.npm/react/0.12.2/package.tgz
-432 info preinstall react@0.12.2
-433 verbose readDependencies using package.json deps
-434 verbose readDependencies using package.json deps
-435 verbose cache add [ 'envify@^3.0.0', null ]
-436 verbose cache add name=undefined spec="envify@^3.0.0" args=["envify@^3.0.0",null]
-437 verbose parsed url { protocol: null,
-437 verbose parsed url   slashes: null,
-437 verbose parsed url   auth: null,
-437 verbose parsed url   host: null,
-437 verbose parsed url   port: null,
-437 verbose parsed url   hostname: null,
-437 verbose parsed url   hash: null,
-437 verbose parsed url   search: null,
-437 verbose parsed url   query: null,
-437 verbose parsed url   pathname: 'envify@^3.0.0',
-437 verbose parsed url   path: 'envify@^3.0.0',
-437 verbose parsed url   href: 'envify@^3.0.0' }
-438 verbose cache add name="envify" spec="^3.0.0" args=["envify","^3.0.0"]
-439 verbose parsed url { protocol: null,
-439 verbose parsed url   slashes: null,
-439 verbose parsed url   auth: null,
-439 verbose parsed url   host: null,
-439 verbose parsed url   port: null,
-439 verbose parsed url   hostname: null,
-439 verbose parsed url   hash: null,
-439 verbose parsed url   search: null,
-439 verbose parsed url   query: null,
-439 verbose parsed url   pathname: '^3.0.0',
-439 verbose parsed url   path: '^3.0.0',
-439 verbose parsed url   href: '^3.0.0' }
-440 verbose addNamed [ 'envify', '^3.0.0' ]
-441 verbose addNamed [ null, '>=3.0.0-0 <4.0.0-0' ]
-442 silly lockFile 60731133-envify-3-0-0 envify@^3.0.0
-443 verbose lock envify@^3.0.0 /home/andrew/.npm/60731133-envify-3-0-0.lock
-444 silly addNameRange { name: 'envify', range: '>=3.0.0-0 <4.0.0-0', hasData: false }
-445 verbose request where is /envify
-446 verbose request registry https://registry.npmjs.org/
-447 verbose url raw /envify
-448 verbose url resolving [ 'https://registry.npmjs.org/', './envify' ]
-449 verbose url resolved https://registry.npmjs.org/envify
-450 verbose request where is https://registry.npmjs.org/envify
-451 info trying registry request attempt 1 at 00:29:06
-452 verbose etag "3G18CCKCZ5XBLLI1439KU5JG7"
-453 http GET https://registry.npmjs.org/envify
-454 http 304 https://registry.npmjs.org/envify
-455 silly registry.get cb [ 304,
-455 silly registry.get   { date: 'Wed, 28 Oct 2015 22:29:06 GMT',
-455 silly registry.get     via: '1.1 varnish',
-455 silly registry.get     'cache-control': 'max-age=60',
-455 silly registry.get     etag: '"3G18CCKCZ5XBLLI1439KU5JG7"',
-455 silly registry.get     age: '18',
-455 silly registry.get     connection: 'keep-alive',
-455 silly registry.get     'x-served-by': 'cache-fra1241-FRA',
-455 silly registry.get     'x-cache': 'HIT',
-455 silly registry.get     'x-cache-hits': '1',
-455 silly registry.get     'x-timer': 'S1446071346.302683,VS0,VE0',
-455 silly registry.get     vary: 'Accept' } ]
-456 verbose etag https://registry.npmjs.org/envify from cache
-457 silly addNameRange number 2 { name: 'envify', range: '>=3.0.0-0 <4.0.0-0', hasData: true }
-458 silly addNameRange versions [ 'envify',
-458 silly addNameRange   [ '0.0.1',
-458 silly addNameRange     '0.1.0',
-458 silly addNameRange     '0.2.0',
-458 silly addNameRange     '1.0.0',
-458 silly addNameRange     '1.0.1',
-458 silly addNameRange     '1.1.0',
-458 silly addNameRange     '1.2.0',
-458 silly addNameRange     '1.2.1',
-458 silly addNameRange     '2.0.0',
-458 silly addNameRange     '2.0.1',
-458 silly addNameRange     '3.0.0',
-458 silly addNameRange     '3.1.0',
-458 silly addNameRange     '3.2.0',
-458 silly addNameRange     '3.3.0',
-458 silly addNameRange     '3.3.1',
-458 silly addNameRange     '3.4.0' ] ]
-459 verbose addNamed [ 'envify', '3.4.0' ]
-460 verbose addNamed [ '3.4.0', '3.4.0' ]
-461 silly lockFile b60ef226-envify-3-4-0 envify@3.4.0
-462 verbose lock envify@3.4.0 /home/andrew/.npm/b60ef226-envify-3-4-0.lock
-463 silly lockFile b60ef226-envify-3-4-0 envify@3.4.0
-464 silly lockFile b60ef226-envify-3-4-0 envify@3.4.0
-465 silly lockFile 60731133-envify-3-0-0 envify@^3.0.0
-466 silly lockFile 60731133-envify-3-0-0 envify@^3.0.0
-467 silly resolved [ { name: 'envify',
-467 silly resolved     version: '3.4.0',
-467 silly resolved     description: 'Selectively replace Node-style environment variables with plain strings.',
-467 silly resolved     main: 'index.js',
-467 silly resolved     scripts: { test: 'node test.js | tap-spec' },
-467 silly resolved     bin: { envify: 'bin/envify' },
-467 silly resolved     repository: { type: 'git', url: 'git://github.com/hughsk/envify.git' },
-467 silly resolved     author:
-467 silly resolved      { name: 'Hugh Kennedy',
-467 silly resolved        email: 'hughskennedy@gmail.com',
-467 silly resolved        url: 'http://hughskennedy.com/' },
-467 silly resolved     license: 'MIT',
-467 silly resolved     devDependencies: { 'tap-spec': '^1.0.1', tape: '~2.3.2' },
-467 silly resolved     dependencies: { through: '~2.3.4', jstransform: '^10.0.1' },
-467 silly resolved     keywords:
-467 silly resolved      [ 'environment',
-467 silly resolved        'variables',
-467 silly resolved        'browserify',
-467 silly resolved        'browserify-transform',
-467 silly resolved        'transform',
-467 silly resolved        'source',
-467 silly resolved        'configuration' ],
-467 silly resolved     gitHead: 'c42c2052e33f82b651a992686c3578639bf0339b',
-467 silly resolved     bugs: { url: 'https://github.com/hughsk/envify/issues' },
-467 silly resolved     homepage: 'https://github.com/hughsk/envify',
-467 silly resolved     _id: 'envify@3.4.0',
-467 silly resolved     _shasum: 'a0bed52222529076a02fabf6ce00eef42d7b6734',
-467 silly resolved     _from: 'envify@^3.0.0',
-467 silly resolved     _npmVersion: '1.4.28',
-467 silly resolved     _npmUser: { name: 'zertosh', email: 'zertosh@gmail.com' },
-467 silly resolved     maintainers: [ [Object], [Object] ],
-467 silly resolved     dist:
-467 silly resolved      { shasum: 'a0bed52222529076a02fabf6ce00eef42d7b6734',
-467 silly resolved        tarball: 'http://registry.npmjs.org/envify/-/envify-3.4.0.tgz' },
-467 silly resolved     directories: {},
-467 silly resolved     _resolved: 'https://registry.npmjs.org/envify/-/envify-3.4.0.tgz',
-467 silly resolved     readme: 'ERROR: No README data found!' } ]
-468 info install envify@3.4.0 into /home/andrew/cybervision/node_modules/react
-469 info installOne envify@3.4.0
-470 verbose node_modules/react/node_modules/envify unbuild
-471 verbose tar unpack /home/andrew/.npm/envify/3.4.0/package.tgz
-472 silly lockFile 898f47d9-odules-react-node-modules-envify tar:///home/andrew/cybervision/node_modules/react/node_modules/envify
-473 verbose lock tar:///home/andrew/cybervision/node_modules/react/node_modules/envify /home/andrew/.npm/898f47d9-odules-react-node-modules-envify.lock
-474 silly lockFile de728b1b-rew-npm-envify-3-4-0-package-tgz tar:///home/andrew/.npm/envify/3.4.0/package.tgz
-475 verbose lock tar:///home/andrew/.npm/envify/3.4.0/package.tgz /home/andrew/.npm/de728b1b-rew-npm-envify-3-4-0-package-tgz.lock
-476 silly gunzTarPerm modes [ '775', '664' ]
-477 silly gunzTarPerm extractEntry package.json
-478 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
-479 silly gunzTarPerm extractEntry .npmignore
-480 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
-481 silly gunzTarPerm extractEntry README.md
-482 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
-483 silly gunzTarPerm extractEntry visitors.js
-484 silly gunzTarPerm modified mode [ 'visitors.js', 420, 436 ]
-485 silly gunzTarPerm extractEntry index.js
-486 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
-487 silly gunzTarPerm extractEntry custom.js
-488 silly gunzTarPerm modified mode [ 'custom.js', 420, 436 ]
-489 silly gunzTarPerm extractEntry bin/envify
-490 silly gunzTarPerm modified mode [ 'bin/envify', 493, 509 ]
-491 silly lockFile 898f47d9-odules-react-node-modules-envify tar:///home/andrew/cybervision/node_modules/react/node_modules/envify
-492 silly lockFile 898f47d9-odules-react-node-modules-envify tar:///home/andrew/cybervision/node_modules/react/node_modules/envify
-493 silly lockFile de728b1b-rew-npm-envify-3-4-0-package-tgz tar:///home/andrew/.npm/envify/3.4.0/package.tgz
-494 silly lockFile de728b1b-rew-npm-envify-3-4-0-package-tgz tar:///home/andrew/.npm/envify/3.4.0/package.tgz
-495 info preinstall envify@3.4.0
-496 verbose readDependencies using package.json deps
-497 verbose readDependencies using package.json deps
-498 verbose cache add [ 'through@~2.3.4', null ]
-499 verbose cache add name=undefined spec="through@~2.3.4" args=["through@~2.3.4",null]
-500 verbose parsed url { protocol: null,
-500 verbose parsed url   slashes: null,
-500 verbose parsed url   auth: null,
-500 verbose parsed url   host: null,
-500 verbose parsed url   port: null,
-500 verbose parsed url   hostname: null,
-500 verbose parsed url   hash: null,
-500 verbose parsed url   search: null,
-500 verbose parsed url   query: null,
-500 verbose parsed url   pathname: 'through@~2.3.4',
-500 verbose parsed url   path: 'through@~2.3.4',
-500 verbose parsed url   href: 'through@~2.3.4' }
-501 verbose cache add [ 'jstransform@^10.0.1', null ]
-502 verbose cache add name=undefined spec="jstransform@^10.0.1" args=["jstransform@^10.0.1",null]
-503 verbose parsed url { protocol: null,
-503 verbose parsed url   slashes: null,
-503 verbose parsed url   auth: null,
-503 verbose parsed url   host: null,
-503 verbose parsed url   port: null,
-503 verbose parsed url   hostname: null,
-503 verbose parsed url   hash: null,
-503 verbose parsed url   search: null,
-503 verbose parsed url   query: null,
-503 verbose parsed url   pathname: 'jstransform@^10.0.1',
-503 verbose parsed url   path: 'jstransform@^10.0.1',
-503 verbose parsed url   href: 'jstransform@^10.0.1' }
-504 verbose cache add name="through" spec="~2.3.4" args=["through","~2.3.4"]
-505 verbose parsed url { protocol: null,
-505 verbose parsed url   slashes: null,
-505 verbose parsed url   auth: null,
-505 verbose parsed url   host: null,
-505 verbose parsed url   port: null,
-505 verbose parsed url   hostname: null,
-505 verbose parsed url   hash: null,
-505 verbose parsed url   search: null,
-505 verbose parsed url   query: null,
-505 verbose parsed url   pathname: '~2.3.4',
-505 verbose parsed url   path: '~2.3.4',
-505 verbose parsed url   href: '~2.3.4' }
-506 verbose addNamed [ 'through', '~2.3.4' ]
-507 verbose addNamed [ null, '>=2.3.4-0 <2.4.0-0' ]
-508 silly lockFile 560c0a42-through-2-3-4 through@~2.3.4
-509 verbose lock through@~2.3.4 /home/andrew/.npm/560c0a42-through-2-3-4.lock
-510 verbose cache add name="jstransform" spec="^10.0.1" args=["jstransform","^10.0.1"]
-511 verbose parsed url { protocol: null,
-511 verbose parsed url   slashes: null,
-511 verbose parsed url   auth: null,
-511 verbose parsed url   host: null,
-511 verbose parsed url   port: null,
-511 verbose parsed url   hostname: null,
-511 verbose parsed url   hash: null,
-511 verbose parsed url   search: null,
-511 verbose parsed url   query: null,
-511 verbose parsed url   pathname: '^10.0.1',
-511 verbose parsed url   path: '^10.0.1',
-511 verbose parsed url   href: '^10.0.1' }
-512 verbose addNamed [ 'jstransform', '^10.0.1' ]
-513 verbose addNamed [ null, '>=10.0.1-0 <11.0.0-0' ]
-514 silly lockFile 92916357-jstransform-10-0-1 jstransform@^10.0.1
-515 verbose lock jstransform@^10.0.1 /home/andrew/.npm/92916357-jstransform-10-0-1.lock
-516 silly addNameRange { name: 'through', range: '>=2.3.4-0 <2.4.0-0', hasData: false }
-517 silly addNameRange { name: 'jstransform',
-517 silly addNameRange   range: '>=10.0.1-0 <11.0.0-0',
-517 silly addNameRange   hasData: false }
-518 verbose request where is /through
-519 verbose request registry https://registry.npmjs.org/
-520 verbose url raw /through
-521 verbose url resolving [ 'https://registry.npmjs.org/', './through' ]
-522 verbose url resolved https://registry.npmjs.org/through
-523 verbose request where is https://registry.npmjs.org/through
-524 info trying registry request attempt 1 at 00:29:06
-525 verbose etag "61NTO9S6KSQU9LU8PCKDZGZK7"
-526 http GET https://registry.npmjs.org/through
-527 verbose request where is /jstransform
-528 verbose request registry https://registry.npmjs.org/
-529 verbose url raw /jstransform
-530 verbose url resolving [ 'https://registry.npmjs.org/', './jstransform' ]
-531 verbose url resolved https://registry.npmjs.org/jstransform
-532 verbose request where is https://registry.npmjs.org/jstransform
-533 info trying registry request attempt 1 at 00:29:06
-534 verbose etag "47B7F6QLHW6K515EWMAOJ4LOW"
-535 http GET https://registry.npmjs.org/jstransform
-536 http 304 https://registry.npmjs.org/jstransform
-537 silly registry.get cb [ 304,
-537 silly registry.get   { date: 'Wed, 28 Oct 2015 22:29:06 GMT',
-537 silly registry.get     via: '1.1 varnish',
-537 silly registry.get     'cache-control': 'max-age=60',
-537 silly registry.get     etag: '"47B7F6QLHW6K515EWMAOJ4LOW"',
-537 silly registry.get     age: '49',
-537 silly registry.get     connection: 'keep-alive',
-537 silly registry.get     'x-served-by': 'cache-fra1245-FRA',
-537 silly registry.get     'x-cache': 'HIT',
-537 silly registry.get     'x-cache-hits': '2',
-537 silly registry.get     'x-timer': 'S1446071346.512120,VS0,VE0',
-537 silly registry.get     vary: 'Accept' } ]
-538 verbose etag https://registry.npmjs.org/jstransform from cache
-539 silly addNameRange number 2 { name: 'jstransform',
-539 silly addNameRange   range: '>=10.0.1-0 <11.0.0-0',
-539 silly addNameRange   hasData: true }
-540 silly addNameRange versions [ 'jstransform',
-540 silly addNameRange   [ '1.0.0',
-540 silly addNameRange     '1.0.1',
-540 silly addNameRange     '2.0.1',
-540 silly addNameRange     '2.0.2',
-540 silly addNameRange     '2.0.3',
-540 silly addNameRange     '3.0.0',
-540 silly addNameRange     '4.0.0',
-540 silly addNameRange     '4.0.1',
-540 silly addNameRange     '5.0.0',
-540 silly addNameRange     '6.0.0',
-540 silly addNameRange     '6.0.1',
-540 silly addNameRange     '6.1.0',
-540 silly addNameRange     '6.2.0',
-540 silly addNameRange     '6.3.0',
-540 silly addNameRange     '6.3.2',
-540 silly addNameRange     '7.0.0',
-540 silly addNameRange     '8.0.0',
-540 silly addNameRange     '8.1.0',
-540 silly addNameRange     '8.2.0',
-540 silly addNameRange     '9.0.0',
-540 silly addNameRange     '9.1.0',
-540 silly addNameRange     '9.1.1',
-540 silly addNameRange     '10.0.0',
-540 silly addNameRange     '10.0.1',
-540 silly addNameRange     '10.1.0',
-540 silly addNameRange     '11.0.0',
-540 silly addNameRange     '11.0.1',
-540 silly addNameRange     '11.0.2',
-540 silly addNameRange     '11.0.3' ] ]
-541 verbose addNamed [ 'jstransform', '10.1.0' ]
-542 verbose addNamed [ '10.1.0', '10.1.0' ]
-543 silly lockFile a43da3f1-jstransform-10-1-0 jstransform@10.1.0
-544 verbose lock jstransform@10.1.0 /home/andrew/.npm/a43da3f1-jstransform-10-1-0.lock
-545 http 304 https://registry.npmjs.org/through
-546 silly registry.get cb [ 304,
-546 silly registry.get   { date: 'Wed, 28 Oct 2015 22:29:06 GMT',
-546 silly registry.get     via: '1.1 varnish',
-546 silly registry.get     'cache-control': 'max-age=60',
-546 silly registry.get     etag: '"61NTO9S6KSQU9LU8PCKDZGZK7"',
-546 silly registry.get     age: '14',
-546 silly registry.get     connection: 'keep-alive',
-546 silly registry.get     'x-served-by': 'cache-fra1240-FRA',
-546 silly registry.get     'x-cache': 'HIT',
-546 silly registry.get     'x-cache-hits': '2',
-546 silly registry.get     'x-timer': 'S1446071346.515682,VS0,VE0',
-546 silly registry.get     vary: 'Accept' } ]
-547 verbose etag https://registry.npmjs.org/through from cache
-548 silly addNameRange number 2 { name: 'through', range: '>=2.3.4-0 <2.4.0-0', hasData: true }
-549 silly addNameRange versions [ 'through',
-549 silly addNameRange   [ '0.0.1',
-549 silly addNameRange     '0.0.2',
-549 silly addNameRange     '0.0.3',
-549 silly addNameRange     '0.0.4',
-549 silly addNameRange     '0.1.0',
-549 silly addNameRange     '0.1.1',
-549 silly addNameRange     '0.1.2',
-549 silly addNameRange     '0.1.3',
-549 silly addNameRange     '0.1.4',
-549 silly addNameRange     '1.0.0',
-549 silly addNameRange     '1.1.0',
-549 silly addNameRange     '1.1.1',
-549 silly addNameRange     '1.1.2',
-549 silly addNameRange     '2.0.0',
-549 silly addNameRange     '2.1.0',
-549 silly addNameRange     '2.2.0',
-549 silly addNameRange     '2.2.1',
-549 silly addNameRange     '2.2.2',
-549 silly addNameRange     '2.2.4',
-549 silly addNameRange     '2.2.5',
-549 silly addNameRange     '2.2.6',
-549 silly addNameRange     '2.2.7',
-549 silly addNameRange     '2.3.1',
-549 silly addNameRange     '2.3.2',
-549 silly addNameRange     '2.3.3',
-549 silly addNameRange     '2.3.4',
-549 silly addNameRange     '2.3.6',
-549 silly addNameRange     '2.3.7',
-549 silly addNameRange     '2.3.8' ] ]
-550 verbose addNamed [ 'through', '2.3.8' ]
-551 verbose addNamed [ '2.3.8', '2.3.8' ]
-552 silly lockFile 05586770-through-2-3-8 through@2.3.8
-553 verbose lock through@2.3.8 /home/andrew/.npm/05586770-through-2-3-8.lock
-554 silly lockFile a43da3f1-jstransform-10-1-0 jstransform@10.1.0
-555 silly lockFile a43da3f1-jstransform-10-1-0 jstransform@10.1.0
-556 silly lockFile 92916357-jstransform-10-0-1 jstransform@^10.0.1
-557 silly lockFile 92916357-jstransform-10-0-1 jstransform@^10.0.1
-558 silly lockFile 05586770-through-2-3-8 through@2.3.8
-559 silly lockFile 05586770-through-2-3-8 through@2.3.8
-560 silly lockFile 560c0a42-through-2-3-4 through@~2.3.4
-561 silly lockFile 560c0a42-through-2-3-4 through@~2.3.4
-562 silly resolved [ { name: 'jstransform',
-562 silly resolved     version: '10.1.0',
-562 silly resolved     description: 'A simple AST visitor-based JS transformer',
-562 silly resolved     contributors: [ [Object] ],
-562 silly resolved     main: 'src/jstransform',
-562 silly resolved     repository: { type: 'git', url: 'git@github.com:facebook/jstransform.git' },
-562 silly resolved     keywords: [ 'transformer', 'compiler', 'syntax', 'visitor' ],
-562 silly resolved     dependencies:
-562 silly resolved      { base62: '0.1.1',
-562 silly resolved        'esprima-fb': '13001.1001.0-dev-harmony-fb',
-562 silly resolved        'source-map': '0.1.31' },
-562 silly resolved     licenses: [ [Object] ],
-562 silly resolved     engines: { node: '>=0.8.8' },
-562 silly resolved     devDependencies: { 'jest-cli': '^0.2', jshint: '^2.5.10' },
-562 silly resolved     jest:
-562 silly resolved      { scriptPreprocessor: '<rootDir>/jestPreprocessor.js',
-562 silly resolved        setupEnvScriptFile: '<rootDir>/jestEnvironment.js',
-562 silly resolved        testPathIgnorePatterns: [Object] },
-562 silly resolved     scripts:
-562 silly resolved      { prepublish: 'jest && jshint --config=.jshintrc --exclude=node_modules .',
-562 silly resolved        test: 'jest && jshint --config=.jshintrc --exclude=node_modules .' },
-562 silly resolved     gitHead: '90201cf6e40549bacf0efe8915600658a9564471',
-562 silly resolved     bugs: { url: 'https://github.com/facebook/jstransform/issues' },
-562 silly resolved     homepage: 'https://github.com/facebook/jstransform',
-562 silly resolved     _id: 'jstransform@10.1.0',
-562 silly resolved     _shasum: 'b4c49bf63f162c108b0348399a8737c713b0a83a',
-562 silly resolved     _from: 'jstransform@^10.0.1',
-562 silly resolved     _npmVersion: '1.4.16',
-562 silly resolved     _npmUser: { name: 'gabelevi', email: 'gabelevi@gmail.com' },
-562 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
-562 silly resolved     dist:
-562 silly resolved      { shasum: 'b4c49bf63f162c108b0348399a8737c713b0a83a',
-562 silly resolved        tarball: 'http://registry.npmjs.org/jstransform/-/jstransform-10.1.0.tgz' },
-562 silly resolved     directories: {},
-562 silly resolved     _resolved: 'https://registry.npmjs.org/jstransform/-/jstransform-10.1.0.tgz',
-562 silly resolved     readme: 'ERROR: No README data found!' },
-562 silly resolved   { name: 'through',
-562 silly resolved     version: '2.3.8',
-562 silly resolved     description: 'simplified stream construction',
-562 silly resolved     main: 'index.js',
-562 silly resolved     scripts: { test: 'set -e; for t in test/*.js; do node $t; done' },
-562 silly resolved     devDependencies: { 'stream-spec': '~0.3.5', tape: '~2.3.2', from: '~0.1.3' },
-562 silly resolved     keywords: [ 'stream', 'streams', 'user-streams', 'pipe' ],
-562 silly resolved     author:
-562 silly resolved      { name: 'Dominic Tarr',
-562 silly resolved        email: 'dominic.tarr@gmail.com',
-562 silly resolved        url: 'dominictarr.com' },
-562 silly resolved     license: 'MIT',
-562 silly resolved     repository:
-562 silly resolved      { type: 'git',
-562 silly resolved        url: 'git+https://github.com/dominictarr/through.git' },
-562 silly resolved     homepage: 'https://github.com/dominictarr/through',
-562 silly resolved     testling: { browsers: [Object], files: 'test/*.js' },
-562 silly resolved     gitHead: '2c5a6f9a0cc54da759b6e10964f2081c358e49dc',
-562 silly resolved     bugs: { url: 'https://github.com/dominictarr/through/issues' },
-562 silly resolved     _id: 'through@2.3.8',
-562 silly resolved     _shasum: '0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5',
-562 silly resolved     _from: 'through@~2.3.4',
-562 silly resolved     _npmVersion: '2.12.0',
-562 silly resolved     _nodeVersion: '2.3.1',
-562 silly resolved     _npmUser: { name: 'dominictarr', email: 'dominic.tarr@gmail.com' },
-562 silly resolved     maintainers: [ [Object] ],
-562 silly resolved     dist:
-562 silly resolved      { shasum: '0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5',
-562 silly resolved        tarball: 'http://registry.npmjs.org/through/-/through-2.3.8.tgz' },
-562 silly resolved     directories: {},
-562 silly resolved     _resolved: 'https://registry.npmjs.org/through/-/through-2.3.8.tgz',
-562 silly resolved     readme: 'ERROR: No README data found!' } ]
-563 info install jstransform@10.1.0 into /home/andrew/cybervision/node_modules/react/node_modules/envify
-564 info install through@2.3.8 into /home/andrew/cybervision/node_modules/react/node_modules/envify
-565 info installOne jstransform@10.1.0
-566 info installOne through@2.3.8
-567 verbose node_modules/react/node_modules/envify/node_modules/jstransform unbuild
-568 verbose node_modules/react/node_modules/envify/node_modules/through unbuild
-569 verbose tar unpack /home/andrew/.npm/jstransform/10.1.0/package.tgz
-570 silly lockFile 7044c725--envify-node-modules-jstransform tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform
-571 verbose lock tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform /home/andrew/.npm/7044c725--envify-node-modules-jstransform.lock
-572 silly lockFile d2058dec-m-jstransform-10-1-0-package-tgz tar:///home/andrew/.npm/jstransform/10.1.0/package.tgz
-573 verbose lock tar:///home/andrew/.npm/jstransform/10.1.0/package.tgz /home/andrew/.npm/d2058dec-m-jstransform-10-1-0-package-tgz.lock
-574 verbose tar unpack /home/andrew/.npm/through/2.3.8/package.tgz
-575 silly lockFile 983e5af5-ules-envify-node-modules-through tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/through
-576 verbose lock tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/through /home/andrew/.npm/983e5af5-ules-envify-node-modules-through.lock
-577 silly lockFile e7425417-ew-npm-through-2-3-8-package-tgz tar:///home/andrew/.npm/through/2.3.8/package.tgz
-578 verbose lock tar:///home/andrew/.npm/through/2.3.8/package.tgz /home/andrew/.npm/e7425417-ew-npm-through-2-3-8-package-tgz.lock
-579 silly gunzTarPerm modes [ '775', '664' ]
-580 silly gunzTarPerm modes [ '775', '664' ]
-581 silly gunzTarPerm extractEntry package.json
-582 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
-583 silly gunzTarPerm extractEntry package.json
-584 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
-585 silly gunzTarPerm extractEntry .npmignore
-586 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
-587 silly gunzTarPerm extractEntry README.md
-588 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
-589 silly gunzTarPerm extractEntry index.js
-590 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
-591 silly gunzTarPerm extractEntry .travis.yml
-592 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
-593 silly gunzTarPerm extractEntry LICENSE
-594 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
-595 silly gunzTarPerm extractEntry LICENSE.APACHE2
-596 silly gunzTarPerm modified mode [ 'LICENSE.APACHE2', 420, 436 ]
-597 silly gunzTarPerm extractEntry LICENSE.MIT
-598 silly gunzTarPerm modified mode [ 'LICENSE.MIT', 420, 436 ]
-599 silly gunzTarPerm extractEntry jestEnvironment.js
-600 silly gunzTarPerm modified mode [ 'jestEnvironment.js', 420, 436 ]
-601 silly gunzTarPerm extractEntry jestPreprocessor.js
-602 silly gunzTarPerm modified mode [ 'jestPreprocessor.js', 420, 436 ]
-603 silly gunzTarPerm extractEntry readme.markdown
-604 silly gunzTarPerm modified mode [ 'readme.markdown', 420, 436 ]
-605 silly gunzTarPerm extractEntry test/async.js
-606 silly gunzTarPerm modified mode [ 'test/async.js', 420, 436 ]
-607 silly gunzTarPerm extractEntry test/auto-destroy.js
-608 silly gunzTarPerm modified mode [ 'test/auto-destroy.js', 420, 436 ]
-609 silly gunzTarPerm extractEntry test/buffering.js
-610 silly gunzTarPerm modified mode [ 'test/buffering.js', 420, 436 ]
-611 silly gunzTarPerm extractEntry .jshintrc
-612 silly gunzTarPerm modified mode [ '.jshintrc', 420, 436 ]
-613 silly gunzTarPerm extractEntry .travis.yml
-614 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
-615 silly gunzTarPerm extractEntry test/end.js
-616 silly gunzTarPerm modified mode [ 'test/end.js', 420, 436 ]
-617 silly gunzTarPerm extractEntry test/index.js
-618 silly gunzTarPerm modified mode [ 'test/index.js', 420, 436 ]
-619 silly gunzTarPerm extractEntry polyfill/Object.es6.js
-620 silly gunzTarPerm modified mode [ 'polyfill/Object.es6.js', 420, 436 ]
-621 silly gunzTarPerm extractEntry src/docblock.js
-622 silly gunzTarPerm modified mode [ 'src/docblock.js', 420, 436 ]
-623 silly gunzTarPerm extractEntry src/jstransform.js
-624 silly gunzTarPerm modified mode [ 'src/jstransform.js', 420, 436 ]
-625 silly gunzTarPerm extractEntry src/utils.js
-626 silly gunzTarPerm modified mode [ 'src/utils.js', 420, 436 ]
-627 silly gunzTarPerm extractEntry src/__tests__/jstransform-test.js
-628 silly gunzTarPerm modified mode [ 'src/__tests__/jstransform-test.js', 420, 436 ]
-629 silly gunzTarPerm extractEntry src/__tests__/jstransform-utils-test.js
-630 silly gunzTarPerm modified mode [ 'src/__tests__/jstransform-utils-test.js', 420, 436 ]
-631 silly gunzTarPerm extractEntry visitors/type-syntax.js
-632 silly gunzTarPerm modified mode [ 'visitors/type-syntax.js', 420, 436 ]
-633 silly gunzTarPerm extractEntry visitors/es6-class-visitors.js
-634 silly gunzTarPerm modified mode [ 'visitors/es6-class-visitors.js', 420, 436 ]
-635 silly gunzTarPerm extractEntry visitors/es6-destructuring-visitors.js
-636 silly gunzTarPerm modified mode [ 'visitors/es6-destructuring-visitors.js', 420, 436 ]
-637 silly gunzTarPerm extractEntry visitors/es6-object-concise-method-visitors.js
-638 silly gunzTarPerm modified mode [ 'visitors/es6-object-concise-method-visitors.js', 420, 436 ]
-639 silly gunzTarPerm extractEntry visitors/es6-object-short-notation-visitors.js
-640 silly gunzTarPerm modified mode [ 'visitors/es6-object-short-notation-visitors.js', 420, 436 ]
-641 silly gunzTarPerm extractEntry visitors/es6-call-spread-visitors.js
-642 silly gunzTarPerm modified mode [ 'visitors/es6-call-spread-visitors.js', 420, 436 ]
-643 silly lockFile 983e5af5-ules-envify-node-modules-through tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/through
-644 silly lockFile 983e5af5-ules-envify-node-modules-through tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/through
-645 silly lockFile e7425417-ew-npm-through-2-3-8-package-tgz tar:///home/andrew/.npm/through/2.3.8/package.tgz
-646 silly lockFile e7425417-ew-npm-through-2-3-8-package-tgz tar:///home/andrew/.npm/through/2.3.8/package.tgz
-647 silly gunzTarPerm extractEntry visitors/es6-template-visitors.js
-648 silly gunzTarPerm modified mode [ 'visitors/es6-template-visitors.js', 420, 436 ]
-649 silly gunzTarPerm extractEntry visitors/es7-rest-property-helpers.js
-650 silly gunzTarPerm modified mode [ 'visitors/es7-rest-property-helpers.js', 420, 436 ]
-651 info preinstall through@2.3.8
-652 verbose readDependencies using package.json deps
-653 verbose readDependencies using package.json deps
-654 silly resolved []
-655 verbose about to build /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/through
-656 info build /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/through
-657 verbose linkStuff [ false,
-657 verbose linkStuff   false,
-657 verbose linkStuff   false,
-657 verbose linkStuff   '/home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules' ]
-658 info linkStuff through@2.3.8
-659 verbose linkBins through@2.3.8
-660 verbose linkMans through@2.3.8
-661 verbose rebuildBundles through@2.3.8
-662 info install through@2.3.8
-663 info postinstall through@2.3.8
-664 silly gunzTarPerm extractEntry visitors/es7-spread-property-visitors.js
-665 silly gunzTarPerm modified mode [ 'visitors/es7-spread-property-visitors.js', 420, 436 ]
-666 silly gunzTarPerm extractEntry visitors/reserved-words-helper.js
-667 silly gunzTarPerm modified mode [ 'visitors/reserved-words-helper.js', 420, 436 ]
-668 silly gunzTarPerm extractEntry visitors/reserved-words-visitors.js
-669 silly gunzTarPerm modified mode [ 'visitors/reserved-words-visitors.js', 420, 436 ]
-670 silly gunzTarPerm extractEntry visitors/es6-arrow-function-visitors.js
-671 silly gunzTarPerm modified mode [ 'visitors/es6-arrow-function-visitors.js', 420, 436 ]
-672 silly gunzTarPerm extractEntry visitors/es6-rest-param-visitors.js
-673 silly gunzTarPerm modified mode [ 'visitors/es6-rest-param-visitors.js', 420, 436 ]
-674 silly gunzTarPerm extractEntry visitors/__tests__/es6-arrow-function-visitors-test.js
-675 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-arrow-function-visitors-test.js',
-675 silly gunzTarPerm   420,
-675 silly gunzTarPerm   436 ]
-676 silly gunzTarPerm extractEntry visitors/__tests__/es6-object-short-notation-visitors-test.js
-677 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-object-short-notation-visitors-test.js',
-677 silly gunzTarPerm   420,
-677 silly gunzTarPerm   436 ]
-678 silly gunzTarPerm extractEntry visitors/__tests__/es6-rest-param-visitors-test.js
-679 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-rest-param-visitors-test.js',
-679 silly gunzTarPerm   420,
-679 silly gunzTarPerm   436 ]
-680 silly gunzTarPerm extractEntry visitors/__tests__/es6-template-visitors-test.js
-681 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-template-visitors-test.js', 420, 436 ]
-682 silly gunzTarPerm extractEntry visitors/__tests__/es7-rest-property-helpers-test.js
-683 silly gunzTarPerm modified mode [ 'visitors/__tests__/es7-rest-property-helpers-test.js',
-683 silly gunzTarPerm   420,
-683 silly gunzTarPerm   436 ]
-684 silly gunzTarPerm extractEntry visitors/__tests__/es6-object-concise-method-visitors-test.js
-685 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-object-concise-method-visitors-test.js',
-685 silly gunzTarPerm   420,
-685 silly gunzTarPerm   436 ]
-686 silly gunzTarPerm extractEntry visitors/__tests__/type-syntax-test.js
-687 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-syntax-test.js', 420, 436 ]
-688 silly gunzTarPerm extractEntry visitors/__tests__/reserved-words-test.js
-689 silly gunzTarPerm modified mode [ 'visitors/__tests__/reserved-words-test.js', 420, 436 ]
-690 silly gunzTarPerm extractEntry visitors/__tests__/type-alias-syntax-test.js
-691 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-alias-syntax-test.js', 420, 436 ]
-692 silly gunzTarPerm extractEntry visitors/__tests__/type-class-syntax-test.js
-693 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-class-syntax-test.js', 420, 436 ]
-694 silly gunzTarPerm extractEntry visitors/__tests__/type-function-syntax-test.js
-695 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-function-syntax-test.js', 420, 436 ]
-696 silly gunzTarPerm extractEntry visitors/__tests__/es6-es7-object-integration-test.js
-697 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-es7-object-integration-test.js',
-697 silly gunzTarPerm   420,
-697 silly gunzTarPerm   436 ]
-698 silly gunzTarPerm extractEntry visitors/__tests__/type-interface-syntax-test.js
-699 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-interface-syntax-test.js', 420, 436 ]
-700 silly gunzTarPerm extractEntry visitors/__tests__/es6-destructuring-visitors-test.js
-701 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-destructuring-visitors-test.js',
-701 silly gunzTarPerm   420,
-701 silly gunzTarPerm   436 ]
-702 silly gunzTarPerm extractEntry visitors/__tests__/type-object-method-syntax-test.js
-703 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-object-method-syntax-test.js',
-703 silly gunzTarPerm   420,
-703 silly gunzTarPerm   436 ]
-704 silly gunzTarPerm extractEntry visitors/__tests__/es6-class-visitors-test.js
-705 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-class-visitors-test.js', 420, 436 ]
-706 silly gunzTarPerm extractEntry visitors/__tests__/type-pattern-syntax-test.js
-707 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-pattern-syntax-test.js', 420, 436 ]
-708 silly gunzTarPerm extractEntry visitors/__tests__/es6-call-spread-visitors-test.js
-709 silly gunzTarPerm modified mode [ 'visitors/__tests__/es6-call-spread-visitors-test.js',
-709 silly gunzTarPerm   420,
-709 silly gunzTarPerm   436 ]
-710 silly gunzTarPerm extractEntry visitors/__tests__/type-variable-declaration-syntax-test.js
-711 silly gunzTarPerm modified mode [ 'visitors/__tests__/type-variable-declaration-syntax-test.js',
-711 silly gunzTarPerm   420,
-711 silly gunzTarPerm   436 ]
-712 silly gunzTarPerm extractEntry visitors/__tests__/es7-spread-property-visitors-test.js
-713 silly gunzTarPerm modified mode [ 'visitors/__tests__/es7-spread-property-visitors-test.js',
-713 silly gunzTarPerm   420,
-713 silly gunzTarPerm   436 ]
-714 silly gunzTarPerm extractEntry visitors/__tests__/gen/generate-type-syntax-test.js
-715 silly gunzTarPerm modified mode [ 'visitors/__tests__/gen/generate-type-syntax-test.js',
-715 silly gunzTarPerm   420,
-715 silly gunzTarPerm   436 ]
-716 silly gunzTarPerm extractEntry visitors/__tests__/gen/type-syntax-test.rec.js
-717 silly gunzTarPerm modified mode [ 'visitors/__tests__/gen/type-syntax-test.rec.js', 420, 436 ]
-718 silly lockFile 7044c725--envify-node-modules-jstransform tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform
-719 silly lockFile 7044c725--envify-node-modules-jstransform tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform
-720 silly lockFile d2058dec-m-jstransform-10-1-0-package-tgz tar:///home/andrew/.npm/jstransform/10.1.0/package.tgz
-721 silly lockFile d2058dec-m-jstransform-10-1-0-package-tgz tar:///home/andrew/.npm/jstransform/10.1.0/package.tgz
-722 info preinstall jstransform@10.1.0
-723 verbose readDependencies using package.json deps
-724 verbose readDependencies using package.json deps
-725 verbose cache add [ 'base62@0.1.1', null ]
-726 verbose cache add name=undefined spec="base62@0.1.1" args=["base62@0.1.1",null]
-727 verbose parsed url { protocol: null,
-727 verbose parsed url   slashes: null,
-727 verbose parsed url   auth: null,
-727 verbose parsed url   host: null,
-727 verbose parsed url   port: null,
-727 verbose parsed url   hostname: null,
-727 verbose parsed url   hash: null,
-727 verbose parsed url   search: null,
-727 verbose parsed url   query: null,
-727 verbose parsed url   pathname: 'base62@0.1.1',
-727 verbose parsed url   path: 'base62@0.1.1',
-727 verbose parsed url   href: 'base62@0.1.1' }
-728 verbose cache add [ 'esprima-fb@13001.1001.0-dev-harmony-fb', null ]
-729 verbose cache add name=undefined spec="esprima-fb@13001.1001.0-dev-harmony-fb" args=["esprima-fb@13001.1001.0-dev-harmony-fb",null]
-730 verbose parsed url { protocol: null,
-730 verbose parsed url   slashes: null,
-730 verbose parsed url   auth: null,
-730 verbose parsed url   host: null,
-730 verbose parsed url   port: null,
-730 verbose parsed url   hostname: null,
-730 verbose parsed url   hash: null,
-730 verbose parsed url   search: null,
-730 verbose parsed url   query: null,
-730 verbose parsed url   pathname: 'esprima-fb@13001.1001.0-dev-harmony-fb',
-730 verbose parsed url   path: 'esprima-fb@13001.1001.0-dev-harmony-fb',
-730 verbose parsed url   href: 'esprima-fb@13001.1001.0-dev-harmony-fb' }
-731 verbose cache add [ 'source-map@0.1.31', null ]
-732 verbose cache add name=undefined spec="source-map@0.1.31" args=["source-map@0.1.31",null]
-733 verbose parsed url { protocol: null,
-733 verbose parsed url   slashes: null,
-733 verbose parsed url   auth: null,
-733 verbose parsed url   host: null,
-733 verbose parsed url   port: null,
-733 verbose parsed url   hostname: null,
-733 verbose parsed url   hash: null,
-733 verbose parsed url   search: null,
-733 verbose parsed url   query: null,
-733 verbose parsed url   pathname: 'source-map@0.1.31',
-733 verbose parsed url   path: 'source-map@0.1.31',
-733 verbose parsed url   href: 'source-map@0.1.31' }
-734 verbose cache add name="base62" spec="0.1.1" args=["base62","0.1.1"]
-735 verbose parsed url { protocol: null,
-735 verbose parsed url   slashes: null,
-735 verbose parsed url   auth: null,
-735 verbose parsed url   host: null,
-735 verbose parsed url   port: null,
-735 verbose parsed url   hostname: null,
-735 verbose parsed url   hash: null,
-735 verbose parsed url   search: null,
-735 verbose parsed url   query: null,
-735 verbose parsed url   pathname: '0.1.1',
-735 verbose parsed url   path: '0.1.1',
-735 verbose parsed url   href: '0.1.1' }
-736 verbose addNamed [ 'base62', '0.1.1' ]
-737 verbose addNamed [ '0.1.1', '0.1.1' ]
-738 silly lockFile c24f39ea-base62-0-1-1 base62@0.1.1
-739 verbose lock base62@0.1.1 /home/andrew/.npm/c24f39ea-base62-0-1-1.lock
-740 verbose cache add name="esprima-fb" spec="13001.1001.0-dev-harmony-fb" args=["esprima-fb","13001.1001.0-dev-harmony-fb"]
-741 verbose parsed url { protocol: null,
-741 verbose parsed url   slashes: null,
-741 verbose parsed url   auth: null,
-741 verbose parsed url   host: null,
-741 verbose parsed url   port: null,
-741 verbose parsed url   hostname: null,
-741 verbose parsed url   hash: null,
-741 verbose parsed url   search: null,
-741 verbose parsed url   query: null,
-741 verbose parsed url   pathname: '13001.1001.0-dev-harmony-fb',
-741 verbose parsed url   path: '13001.1001.0-dev-harmony-fb',
-741 verbose parsed url   href: '13001.1001.0-dev-harmony-fb' }
-742 verbose addNamed [ 'esprima-fb', '13001.1001.0-dev-harmony-fb' ]
-743 verbose addNamed [ '13001.1001.0-dev-harmony-fb', '13001.1001.0-dev-harmony-fb' ]
-744 silly lockFile b6ef9b9a-a-fb-13001-1001-0-dev-harmony-fb esprima-fb@13001.1001.0-dev-harmony-fb
-745 verbose lock esprima-fb@13001.1001.0-dev-harmony-fb /home/andrew/.npm/b6ef9b9a-a-fb-13001-1001-0-dev-harmony-fb.lock
-746 verbose cache add name="source-map" spec="0.1.31" args=["source-map","0.1.31"]
-747 verbose parsed url { protocol: null,
-747 verbose parsed url   slashes: null,
-747 verbose parsed url   auth: null,
-747 verbose parsed url   host: null,
-747 verbose parsed url   port: null,
-747 verbose parsed url   hostname: null,
-747 verbose parsed url   hash: null,
-747 verbose parsed url   search: null,
-747 verbose parsed url   query: null,
-747 verbose parsed url   pathname: '0.1.31',
-747 verbose parsed url   path: '0.1.31',
-747 verbose parsed url   href: '0.1.31' }
-748 verbose addNamed [ 'source-map', '0.1.31' ]
-749 verbose addNamed [ '0.1.31', '0.1.31' ]
-750 silly lockFile da25d7af-source-map-0-1-31 source-map@0.1.31
-751 verbose lock source-map@0.1.31 /home/andrew/.npm/da25d7af-source-map-0-1-31.lock
-752 verbose request where is /base62
-753 verbose request registry https://registry.npmjs.org/
-754 verbose url raw /base62
-755 verbose url resolving [ 'https://registry.npmjs.org/', './base62' ]
-756 verbose url resolved https://registry.npmjs.org/base62
-757 verbose request where is https://registry.npmjs.org/base62
-758 info trying registry request attempt 1 at 00:29:06
-759 verbose etag "BQZ7WJ20DXU0D6FF0L2UQ5RG9"
-760 http GET https://registry.npmjs.org/base62
-761 verbose request where is /esprima-fb
-762 verbose request registry https://registry.npmjs.org/
-763 verbose url raw /esprima-fb
-764 verbose url resolving [ 'https://registry.npmjs.org/', './esprima-fb' ]
-765 verbose url resolved https://registry.npmjs.org/esprima-fb
-766 verbose request where is https://registry.npmjs.org/esprima-fb
-767 info trying registry request attempt 1 at 00:29:06
-768 verbose etag "4AEUSG43ZILFZ10L3XXRKITLR"
-769 http GET https://registry.npmjs.org/esprima-fb
-770 verbose request where is /source-map
-771 verbose request registry https://registry.npmjs.org/
-772 verbose url raw /source-map
-773 verbose url resolving [ 'https://registry.npmjs.org/', './source-map' ]
-774 verbose url resolved https://registry.npmjs.org/source-map
-775 verbose request where is https://registry.npmjs.org/source-map
-776 info trying registry request attempt 1 at 00:29:06
-777 verbose etag "4EEKU58D7BQIKB4PN0IJDBN5Q"
-778 http GET https://registry.npmjs.org/source-map
-779 http 304 https://registry.npmjs.org/base62
-780 silly registry.get cb [ 304,
-780 silly registry.get   { date: 'Wed, 28 Oct 2015 22:29:06 GMT',
-780 silly registry.get     via: '1.1 varnish',
-780 silly registry.get     'cache-control': 'max-age=60',
-780 silly registry.get     etag: '"BQZ7WJ20DXU0D6FF0L2UQ5RG9"',
-780 silly registry.get     age: '18',
-780 silly registry.get     connection: 'keep-alive',
-780 silly registry.get     'x-served-by': 'cache-fra1225-FRA',
-780 silly registry.get     'x-cache': 'HIT',
-780 silly registry.get     'x-cache-hits': '2',
-780 silly registry.get     'x-timer': 'S1446071346.977225,VS0,VE0',
-780 silly registry.get     vary: 'Accept' } ]
-781 verbose etag https://registry.npmjs.org/base62 from cache
-782 silly lockFile c24f39ea-base62-0-1-1 base62@0.1.1
-783 silly lockFile c24f39ea-base62-0-1-1 base62@0.1.1
-784 http 304 https://registry.npmjs.org/source-map
-785 silly registry.get cb [ 304,
-785 silly registry.get   { date: 'Wed, 28 Oct 2015 22:29:07 GMT',
-785 silly registry.get     via: '1.1 varnish',
-785 silly registry.get     'cache-control': 'max-age=60',
-785 silly registry.get     etag: '"4EEKU58D7BQIKB4PN0IJDBN5Q"',
-785 silly registry.get     age: '21',
-785 silly registry.get     connection: 'keep-alive',
-785 silly registry.get     'x-served-by': 'cache-fra1223-FRA',
-785 silly registry.get     'x-cache': 'HIT',
-785 silly registry.get     'x-cache-hits': '5',
-785 silly registry.get     'x-timer': 'S1446071347.005080,VS0,VE0',
-785 silly registry.get     vary: 'Accept' } ]
-786 verbose etag https://registry.npmjs.org/source-map from cache
-787 http 304 https://registry.npmjs.org/esprima-fb
-788 silly registry.get cb [ 304,
-788 silly registry.get   { date: 'Wed, 28 Oct 2015 22:29:07 GMT',
-788 silly registry.get     via: '1.1 varnish',
-788 silly registry.get     'cache-control': 'max-age=60',
-788 silly registry.get     etag: '"4AEUSG43ZILFZ10L3XXRKITLR"',
-788 silly registry.get     age: '2',
-788 silly registry.get     connection: 'keep-alive',
-788 silly registry.get     'x-served-by': 'cache-fra1236-FRA',
-788 silly registry.get     'x-cache': 'HIT',
-788 silly registry.get     'x-cache-hits': '1',
-788 silly registry.get     'x-timer': 'S1446071347.007501,VS0,VE0',
-788 silly registry.get     vary: 'Accept' } ]
-789 verbose etag https://registry.npmjs.org/esprima-fb from cache
-790 silly lockFile b6ef9b9a-a-fb-13001-1001-0-dev-harmony-fb esprima-fb@13001.1001.0-dev-harmony-fb
-791 silly lockFile b6ef9b9a-a-fb-13001-1001-0-dev-harmony-fb esprima-fb@13001.1001.0-dev-harmony-fb
-792 silly lockFile da25d7af-source-map-0-1-31 source-map@0.1.31
-793 silly lockFile da25d7af-source-map-0-1-31 source-map@0.1.31
-794 silly resolved [ { author:
-794 silly resolved      { name: 'Andrew Nesbitt',
-794 silly resolved        email: 'andrewnez@gmail.com',
-794 silly resolved        url: 'http://andrew-nesbitt.com/' },
-794 silly resolved     name: 'base62',
-794 silly resolved     description: 'Javascript Base62 encode/decoder',
-794 silly resolved     keywords: [ 'base-62' ],
-794 silly resolved     version: '0.1.1',
-794 silly resolved     repository: { type: 'git', url: 'git://github.com/andrew/base62.js.git' },
-794 silly resolved     main: 'base62.js',
-794 silly resolved     engines: { node: '*' },
-794 silly resolved     scripts: { test: 'mocha test' },
-794 silly resolved     devDependencies: { mocha: '1.7.x' },
-794 silly resolved     _id: 'base62@0.1.1',
-794 silly resolved     dist:
-794 silly resolved      { shasum: '7b4174c2f94449753b11c2651c083da841a7b084',
-794 silly resolved        tarball: 'http://registry.npmjs.org/base62/-/base62-0.1.1.tgz' },
-794 silly resolved     _npmVersion: '1.1.65',
-794 silly resolved     _npmUser: { name: 'andrewnez', email: 'andrewnez@gmail.com' },
-794 silly resolved     maintainers: [ [Object] ],
-794 silly resolved     directories: {},
-794 silly resolved     _shasum: '7b4174c2f94449753b11c2651c083da841a7b084',
-794 silly resolved     _from: 'base62@0.1.1',
-794 silly resolved     _resolved: 'https://registry.npmjs.org/base62/-/base62-0.1.1.tgz',
-794 silly resolved     bugs: { url: 'https://github.com/andrew/base62.js/issues' },
-794 silly resolved     readme: 'ERROR: No README data found!',
-794 silly resolved     homepage: 'https://github.com/andrew/base62.js' },
-794 silly resolved   { name: 'source-map',
-794 silly resolved     description: 'Generates and consumes source maps',
-794 silly resolved     version: '0.1.31',
-794 silly resolved     homepage: 'https://github.com/mozilla/source-map',
-794 silly resolved     author: { name: 'Nick Fitzgerald', email: 'nfitzgerald@mozilla.com' },
-794 silly resolved     contributors:
-794 silly resolved      [ [Object],
-794 silly resolved        [Object],
-794 silly resolved        [Object],
-794 silly resolved        [Object],
-794 silly resolved        [Object],
-794 silly resolved        [Object],
-794 silly resolved        [Object],
-794 silly resolved        [Object],
-794 silly resolved        [Object],
-794 silly resolved        [Object],
-794 silly resolved        [Object],
-794 silly resolved        [Object],
-794 silly resolved        [Object],
-794 silly resolved        [Object],
-794 silly resolved        [Object],
-794 silly resolved        [Object] ],
-794 silly resolved     repository: { type: 'git', url: 'http://github.com/mozilla/source-map.git' },
-794 silly resolved     directories: { lib: './lib' },
-794 silly resolved     main: './lib/source-map.js',
-794 silly resolved     engines: { node: '>=0.8.0' },
-794 silly resolved     licenses: [ [Object] ],
-794 silly resolved     dependencies: { amdefine: '>=0.0.4' },
-794 silly resolved     devDependencies: { dryice: '>=0.4.8' },
-794 silly resolved     scripts:
-794 silly resolved      { test: 'node test/run-tests.js',
-794 silly resolved        build: 'node Makefile.dryice.js' },
-794 silly resolved     _id: 'source-map@0.1.31',
-794 silly resolved     dist:
-794 silly resolved      { shasum: '9f704d0d69d9e138a81badf6ebb4fde33d151c61',
-794 silly resolved        tarball: 'http://registry.npmjs.org/source-map/-/source-map-0.1.31.tgz' },
-794 silly resolved     _from: 'source-map@0.1.31',
-794 silly resolved     _npmVersion: '1.2.18',
-794 silly resolved     _npmUser: { name: 'nickfitzgerald', email: 'fitzgen@gmail.com' },
-794 silly resolved     maintainers: [ [Object], [Object], [Object] ],
-794 silly resolved     _shasum: '9f704d0d69d9e138a81badf6ebb4fde33d151c61',
-794 silly resolved     _resolved: 'https://registry.npmjs.org/source-map/-/source-map-0.1.31.tgz',
-794 silly resolved     bugs: { url: 'https://github.com/mozilla/source-map/issues' },
-794 silly resolved     readme: 'ERROR: No README data found!' },
-794 silly resolved   { name: 'esprima-fb',
-794 silly resolved     description: 'Facebook-specific fork of the esprima project',
-794 silly resolved     homepage: 'https://github.com/facebook/esprima/tree/fb-harmony',
-794 silly resolved     main: 'esprima.js',
-794 silly resolved     bin:
-794 silly resolved      { esparse: './bin/esparse.js',
-794 silly resolved        esvalidate: './bin/esvalidate.js' },
-794 silly resolved     version: '13001.1001.0-dev-harmony-fb',
-794 silly resolved     files:
-794 silly resolved      [ 'bin',
-794 silly resolved        'test/run.js',
-794 silly resolved        'test/runner.js',
-794 silly resolved        'test/test.js',
-794 silly resolved        'test/compat.js',
-794 silly resolved        'test/reflect.js',
-794 silly resolved        'esprima.js' ],
-794 silly resolved     engines: { node: '>=0.4.0' },
-794 silly resolved     author: { name: 'Ariya Hidayat', email: 'ariya.hidayat@gmail.com' },
-794 silly resolved     maintainers: [ [Object], [Object], [Object] ],
-794 silly resolved     repository: { type: 'git', url: 'http://github.com/facebook/esprima.git' },
-794 silly resolved     bugs: { url: 'http://issues.esprima.org' },
-794 silly resolved     licenses: [ [Object] ],
-794 silly resolved     devDependencies:
-794 silly resolved      { eslint: '~0.12.0',
-794 silly resolved        jscs: '~1.10.0',
-794 silly resolved        istanbul: '~0.2.6',
-794 silly resolved        'escomplex-js': '1.0.0',
-794 silly resolved        'complexity-report': '~1.1.1',
-794 silly resolved        regenerate: '~0.5.4',
-794 silly resolved        'unicode-6.3.0': '~0.1.0',
-794 silly resolved        'json-diff': '~0.3.1',
-794 silly resolved        commander: '~2.5.0' },
-794 silly resolved     scripts:
-794 silly resolved      { 'generate-regex': 'node tools/generate-identifier-regex.js',
-794 silly resolved        test: 'node test/run.js && npm run lint && npm run coverage',
-794 silly resolved        lint: 'npm run check-version && npm run eslint && npm run jscs && npm run complexity',
-794 silly resolved        'check-version': 'node tools/check-version.js',
-794 silly resolved        jscs: 'jscs esprima.js test/*test.js',
-794 silly resolved        eslint: 'node node_modules/eslint/bin/eslint.js esprima.js',
-794 silly resolved        complexity: 'node tools/list-complexity.js && cr -s -l -w --maxcyc 18 esprima.js',
-794 silly resolved        coverage: 'npm run analyze-coverage && npm run check-coverage',
-794 silly resolved        'analyze-coverage': 'node node_modules/istanbul/lib/cli.js cover test/runner.js',
-794 silly resolved        'check-coverage': 'node node_modules/istanbul/lib/cli.js check-coverage --statement 100 --branch 100 --function 100',
-794 silly resolved        benchmark: 'node test/benchmarks.js',
-794 silly resolved        'benchmark-quick': 'node test/benchmarks.js quick' },
-794 silly resolved     gitHead: 'a3ae0c054867db61166dd72affc579710b36476d',
-794 silly resolved     _id: 'esprima-fb@13001.1001.0-dev-harmony-fb',
-794 silly resolved     _shasum: '633acdb40d9bd4db8a1c1d68c06a942959fad2b0',
-794 silly resolved     _from: 'esprima-fb@13001.1001.0-dev-harmony-fb',
-794 silly resolved     _npmVersion: '1.4.16',
-794 silly resolved     _npmUser: { name: 'gabelevi', email: 'gabelevi@gmail.com' },
-794 silly resolved     dist:
-794 silly resolved      { shasum: '633acdb40d9bd4db8a1c1d68c06a942959fad2b0',
-794 silly resolved        tarball: 'http://registry.npmjs.org/esprima-fb/-/esprima-fb-13001.1001.0-dev-harmony-fb.tgz' },
-794 silly resolved     directories: {},
-794 silly resolved     _resolved: 'https://registry.npmjs.org/esprima-fb/-/esprima-fb-13001.1001.0-dev-harmony-fb.tgz',
-794 silly resolved     readme: 'ERROR: No README data found!' } ]
-795 info install base62@0.1.1 into /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform
-796 info install source-map@0.1.31 into /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform
-797 info install esprima-fb@13001.1001.0-dev-harmony-fb into /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform
-798 info installOne base62@0.1.1
-799 info installOne source-map@0.1.31
-800 info installOne esprima-fb@13001.1001.0-dev-harmony-fb
-801 verbose node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/base62 unbuild
-802 verbose node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map unbuild
-803 verbose node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb unbuild
-804 verbose tar unpack /home/andrew/.npm/base62/0.1.1/package.tgz
-805 silly lockFile f0062049--jstransform-node-modules-base62 tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/base62
-806 verbose lock tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/base62 /home/andrew/.npm/f0062049--jstransform-node-modules-base62.lock
-807 silly lockFile 903e9f88-rew-npm-base62-0-1-1-package-tgz tar:///home/andrew/.npm/base62/0.1.1/package.tgz
-808 verbose lock tar:///home/andrew/.npm/base62/0.1.1/package.tgz /home/andrew/.npm/903e9f88-rew-npm-base62-0-1-1-package-tgz.lock
-809 verbose tar unpack /home/andrew/.npm/source-map/0.1.31/package.tgz
-810 silly lockFile 51a4fc34-ransform-node-modules-source-map tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map
-811 verbose lock tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map /home/andrew/.npm/51a4fc34-ransform-node-modules-source-map.lock
-812 silly lockFile 4fdf2ba6-pm-source-map-0-1-31-package-tgz tar:///home/andrew/.npm/source-map/0.1.31/package.tgz
-813 verbose lock tar:///home/andrew/.npm/source-map/0.1.31/package.tgz /home/andrew/.npm/4fdf2ba6-pm-source-map-0-1-31-package-tgz.lock
-814 verbose tar unpack /home/andrew/.npm/esprima-fb/13001.1001.0-dev-harmony-fb/package.tgz
-815 silly lockFile ebef4ad9-ransform-node-modules-esprima-fb tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb
-816 verbose lock tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb /home/andrew/.npm/ebef4ad9-ransform-node-modules-esprima-fb.lock
-817 silly lockFile 68e6de71-001-0-dev-harmony-fb-package-tgz tar:///home/andrew/.npm/esprima-fb/13001.1001.0-dev-harmony-fb/package.tgz
-818 verbose lock tar:///home/andrew/.npm/esprima-fb/13001.1001.0-dev-harmony-fb/package.tgz /home/andrew/.npm/68e6de71-001-0-dev-harmony-fb-package-tgz.lock
-819 silly gunzTarPerm modes [ '775', '664' ]
-820 silly gunzTarPerm modes [ '775', '664' ]
-821 silly gunzTarPerm modes [ '775', '664' ]
-822 silly gunzTarPerm extractEntry package.json
-823 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
-824 silly gunzTarPerm extractEntry package.json
-825 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
-826 silly gunzTarPerm extractEntry package.json
-827 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
-828 silly gunzTarPerm extractEntry LICENSE
-829 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
-830 silly gunzTarPerm extractEntry base62.js
-831 silly gunzTarPerm modified mode [ 'base62.js', 420, 436 ]
-832 silly gunzTarPerm extractEntry .npmignore
-833 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
-834 silly gunzTarPerm extractEntry README.md
-835 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
-836 silly gunzTarPerm extractEntry README.md
-837 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
-838 silly gunzTarPerm extractEntry esprima.js
-839 silly gunzTarPerm modified mode [ 'esprima.js', 420, 436 ]
-840 silly gunzTarPerm extractEntry .travis.yml
-841 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
-842 silly gunzTarPerm extractEntry Readme.md
-843 silly gunzTarPerm modified mode [ 'Readme.md', 420, 436 ]
-844 silly gunzTarPerm extractEntry LICENSE
-845 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
-846 silly gunzTarPerm extractEntry bin/esparse.js
-847 silly gunzTarPerm modified mode [ 'bin/esparse.js', 493, 509 ]
-848 silly gunzTarPerm extractEntry test/test.js
-849 silly gunzTarPerm modified mode [ 'test/test.js', 420, 436 ]
-850 silly gunzTarPerm extractEntry Makefile.dryice.js
-851 silly gunzTarPerm modified mode [ 'Makefile.dryice.js', 420, 436 ]
-852 silly gunzTarPerm extractEntry .travis.yml
-853 silly gunzTarPerm modified mode [ '.travis.yml', 420, 436 ]
-854 silly gunzTarPerm extractEntry bin/esvalidate.js
-855 silly gunzTarPerm modified mode [ 'bin/esvalidate.js', 493, 509 ]
-856 silly gunzTarPerm extractEntry test/compat.js
-857 silly gunzTarPerm modified mode [ 'test/compat.js', 420, 436 ]
-858 silly gunzTarPerm extractEntry test/reflect.js
-859 silly gunzTarPerm modified mode [ 'test/reflect.js', 420, 436 ]
-860 silly gunzTarPerm extractEntry CHANGELOG.md
-861 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
-862 silly gunzTarPerm extractEntry build/assert-shim.js
-863 silly gunzTarPerm modified mode [ 'build/assert-shim.js', 420, 436 ]
-864 silly lockFile f0062049--jstransform-node-modules-base62 tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/base62
-865 silly lockFile f0062049--jstransform-node-modules-base62 tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/base62
-866 silly lockFile 903e9f88-rew-npm-base62-0-1-1-package-tgz tar:///home/andrew/.npm/base62/0.1.1/package.tgz
-867 silly lockFile 903e9f88-rew-npm-base62-0-1-1-package-tgz tar:///home/andrew/.npm/base62/0.1.1/package.tgz
-868 silly gunzTarPerm extractEntry build/mini-require.js
-869 silly gunzTarPerm modified mode [ 'build/mini-require.js', 420, 436 ]
-870 silly gunzTarPerm extractEntry build/suffix-browser.js
-871 silly gunzTarPerm modified mode [ 'build/suffix-browser.js', 420, 436 ]
-872 info preinstall base62@0.1.1
-873 verbose readDependencies using package.json deps
-874 verbose readDependencies using package.json deps
-875 silly resolved []
-876 verbose about to build /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/base62
-877 info build /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/base62
-878 verbose linkStuff [ false,
-878 verbose linkStuff   false,
-878 verbose linkStuff   false,
-878 verbose linkStuff   '/home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules' ]
-879 info linkStuff base62@0.1.1
-880 verbose linkBins base62@0.1.1
-881 verbose linkMans base62@0.1.1
-882 verbose rebuildBundles base62@0.1.1
-883 info install base62@0.1.1
-884 info postinstall base62@0.1.1
-885 silly gunzTarPerm extractEntry build/test-prefix.js
-886 silly gunzTarPerm modified mode [ 'build/test-prefix.js', 420, 436 ]
-887 silly gunzTarPerm extractEntry build/test-suffix.js
-888 silly gunzTarPerm modified mode [ 'build/test-suffix.js', 420, 436 ]
-889 silly gunzTarPerm extractEntry build/prefix-source-map.jsm
-890 silly gunzTarPerm modified mode [ 'build/prefix-source-map.jsm', 420, 436 ]
-891 silly gunzTarPerm extractEntry build/prefix-utils.jsm
-892 silly gunzTarPerm modified mode [ 'build/prefix-utils.jsm', 420, 436 ]
-893 silly gunzTarPerm extractEntry test/run.js
-894 silly gunzTarPerm modified mode [ 'test/run.js', 420, 436 ]
-895 silly gunzTarPerm extractEntry build/suffix-source-map.jsm
-896 silly gunzTarPerm modified mode [ 'build/suffix-source-map.jsm', 420, 436 ]
-897 silly gunzTarPerm extractEntry build/suffix-utils.jsm
-898 silly gunzTarPerm modified mode [ 'build/suffix-utils.jsm', 420, 436 ]
-899 silly gunzTarPerm extractEntry lib/source-map.js
-900 silly gunzTarPerm modified mode [ 'lib/source-map.js', 420, 436 ]
-901 silly gunzTarPerm extractEntry lib/source-map/array-set.js
-902 silly gunzTarPerm modified mode [ 'lib/source-map/array-set.js', 420, 436 ]
-903 silly gunzTarPerm extractEntry test/runner.js
-904 silly gunzTarPerm modified mode [ 'test/runner.js', 420, 436 ]
-905 silly gunzTarPerm extractEntry lib/source-map/base64-vlq.js
-906 silly gunzTarPerm modified mode [ 'lib/source-map/base64-vlq.js', 420, 436 ]
-907 silly gunzTarPerm extractEntry lib/source-map/base64.js
-908 silly gunzTarPerm modified mode [ 'lib/source-map/base64.js', 420, 436 ]
-909 silly gunzTarPerm extractEntry lib/source-map/binary-search.js
-910 silly gunzTarPerm modified mode [ 'lib/source-map/binary-search.js', 420, 436 ]
-911 silly gunzTarPerm extractEntry lib/source-map/source-map-consumer.js
-912 silly gunzTarPerm modified mode [ 'lib/source-map/source-map-consumer.js', 420, 436 ]
-913 silly gunzTarPerm extractEntry lib/source-map/source-map-generator.js
-914 silly gunzTarPerm modified mode [ 'lib/source-map/source-map-generator.js', 420, 436 ]
-915 silly gunzTarPerm extractEntry lib/source-map/source-node.js
-916 silly gunzTarPerm modified mode [ 'lib/source-map/source-node.js', 420, 436 ]
-917 silly gunzTarPerm extractEntry lib/source-map/util.js
-918 silly gunzTarPerm modified mode [ 'lib/source-map/util.js', 420, 436 ]
-919 silly gunzTarPerm extractEntry test/run-tests.js
-920 silly gunzTarPerm modified mode [ 'test/run-tests.js', 493, 509 ]
-921 silly gunzTarPerm extractEntry test/test.js
-922 silly gunzTarPerm modified mode [ 'test/test.js', 420, 436 ]
-923 silly gunzTarPerm extractEntry test/source-map/test-api.js
-924 silly gunzTarPerm modified mode [ 'test/source-map/test-api.js', 420, 436 ]
-925 silly gunzTarPerm extractEntry test/source-map/test-array-set.js
-926 silly gunzTarPerm modified mode [ 'test/source-map/test-array-set.js', 420, 436 ]
-927 silly gunzTarPerm extractEntry test/source-map/test-base64-vlq.js
-928 silly gunzTarPerm modified mode [ 'test/source-map/test-base64-vlq.js', 420, 436 ]
-929 silly gunzTarPerm extractEntry test/source-map/test-base64.js
-930 silly gunzTarPerm modified mode [ 'test/source-map/test-base64.js', 420, 436 ]
-931 silly gunzTarPerm extractEntry test/source-map/test-binary-search.js
-932 silly gunzTarPerm modified mode [ 'test/source-map/test-binary-search.js', 420, 436 ]
-933 silly gunzTarPerm extractEntry test/source-map/test-dog-fooding.js
-934 silly gunzTarPerm modified mode [ 'test/source-map/test-dog-fooding.js', 420, 436 ]
-935 silly gunzTarPerm extractEntry test/source-map/test-source-map-consumer.js
-936 silly gunzTarPerm modified mode [ 'test/source-map/test-source-map-consumer.js', 420, 436 ]
-937 silly gunzTarPerm extractEntry test/source-map/test-source-map-generator.js
-938 silly gunzTarPerm modified mode [ 'test/source-map/test-source-map-generator.js', 420, 436 ]
-939 silly gunzTarPerm extractEntry test/source-map/test-source-node.js
-940 silly gunzTarPerm modified mode [ 'test/source-map/test-source-node.js', 420, 436 ]
-941 silly gunzTarPerm extractEntry test/source-map/util.js
-942 silly gunzTarPerm modified mode [ 'test/source-map/util.js', 420, 436 ]
-943 silly lockFile 51a4fc34-ransform-node-modules-source-map tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map
-944 silly lockFile 51a4fc34-ransform-node-modules-source-map tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map
-945 silly lockFile 4fdf2ba6-pm-source-map-0-1-31-package-tgz tar:///home/andrew/.npm/source-map/0.1.31/package.tgz
-946 silly lockFile 4fdf2ba6-pm-source-map-0-1-31-package-tgz tar:///home/andrew/.npm/source-map/0.1.31/package.tgz
-947 info preinstall source-map@0.1.31
-948 verbose readDependencies using package.json deps
-949 verbose readDependencies using package.json deps
-950 verbose cache add [ 'amdefine@>=0.0.4', null ]
-951 verbose cache add name=undefined spec="amdefine@>=0.0.4" args=["amdefine@>=0.0.4",null]
-952 verbose parsed url { protocol: null,
-952 verbose parsed url   slashes: null,
-952 verbose parsed url   auth: null,
-952 verbose parsed url   host: null,
-952 verbose parsed url   port: null,
-952 verbose parsed url   hostname: null,
-952 verbose parsed url   hash: null,
-952 verbose parsed url   search: null,
-952 verbose parsed url   query: null,
-952 verbose parsed url   pathname: 'amdefine@%3E=0.0.4',
-952 verbose parsed url   path: 'amdefine@%3E=0.0.4',
-952 verbose parsed url   href: 'amdefine@%3E=0.0.4' }
-953 verbose cache add name="amdefine" spec=">=0.0.4" args=["amdefine",">=0.0.4"]
-954 verbose parsed url { protocol: null,
-954 verbose parsed url   slashes: null,
-954 verbose parsed url   auth: null,
-954 verbose parsed url   host: null,
-954 verbose parsed url   port: null,
-954 verbose parsed url   hostname: null,
-954 verbose parsed url   hash: null,
-954 verbose parsed url   search: null,
-954 verbose parsed url   query: null,
-954 verbose parsed url   pathname: '%3E=0.0.4',
-954 verbose parsed url   path: '%3E=0.0.4',
-954 verbose parsed url   href: '%3E=0.0.4' }
-955 verbose addNamed [ 'amdefine', '>=0.0.4' ]
-956 verbose addNamed [ null, '>=0.0.4' ]
-957 silly lockFile 165d2d7b-amdefine-0-0-4 amdefine@>=0.0.4
-958 verbose lock amdefine@>=0.0.4 /home/andrew/.npm/165d2d7b-amdefine-0-0-4.lock
-959 silly addNameRange { name: 'amdefine', range: '>=0.0.4', hasData: false }
-960 verbose request where is /amdefine
-961 verbose request registry https://registry.npmjs.org/
-962 verbose url raw /amdefine
-963 verbose url resolving [ 'https://registry.npmjs.org/', './amdefine' ]
-964 verbose url resolved https://registry.npmjs.org/amdefine
-965 verbose request where is https://registry.npmjs.org/amdefine
-966 info trying registry request attempt 1 at 00:29:07
-967 verbose etag "CQH8SW0THU42U5RKW7K6F1TRH"
-968 http GET https://registry.npmjs.org/amdefine
-969 silly lockFile ebef4ad9-ransform-node-modules-esprima-fb tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb
-970 silly lockFile ebef4ad9-ransform-node-modules-esprima-fb tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb
-971 silly lockFile 68e6de71-001-0-dev-harmony-fb-package-tgz tar:///home/andrew/.npm/esprima-fb/13001.1001.0-dev-harmony-fb/package.tgz
-972 silly lockFile 68e6de71-001-0-dev-harmony-fb-package-tgz tar:///home/andrew/.npm/esprima-fb/13001.1001.0-dev-harmony-fb/package.tgz
-973 info preinstall esprima-fb@13001.1001.0-dev-harmony-fb
-974 verbose readDependencies using package.json deps
-975 verbose readDependencies using package.json deps
-976 silly resolved []
-977 verbose about to build /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb
-978 info build /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/esprima-fb
-979 verbose linkStuff [ false,
-979 verbose linkStuff   false,
-979 verbose linkStuff   false,
-979 verbose linkStuff   '/home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules' ]
-980 info linkStuff esprima-fb@13001.1001.0-dev-harmony-fb
-981 verbose linkBins esprima-fb@13001.1001.0-dev-harmony-fb
-982 verbose link bins [ { esparse: './bin/esparse.js',
-982 verbose link bins     esvalidate: './bin/esvalidate.js' },
-982 verbose link bins   '/home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/.bin',
-982 verbose link bins   false ]
-983 verbose linkMans esprima-fb@13001.1001.0-dev-harmony-fb
-984 verbose rebuildBundles esprima-fb@13001.1001.0-dev-harmony-fb
-985 info install esprima-fb@13001.1001.0-dev-harmony-fb
-986 info postinstall esprima-fb@13001.1001.0-dev-harmony-fb
-987 http 304 https://registry.npmjs.org/amdefine
-988 silly registry.get cb [ 304,
-988 silly registry.get   { date: 'Wed, 28 Oct 2015 22:29:07 GMT',
-988 silly registry.get     via: '1.1 varnish',
-988 silly registry.get     'cache-control': 'max-age=60',
-988 silly registry.get     etag: '"CQH8SW0THU42U5RKW7K6F1TRH"',
-988 silly registry.get     age: '0',
-988 silly registry.get     connection: 'keep-alive',
-988 silly registry.get     'x-served-by': 'cache-fra1223-FRA',
-988 silly registry.get     'x-cache': 'HIT',
-988 silly registry.get     'x-cache-hits': '1',
-988 silly registry.get     'x-timer': 'S1446071347.376299,VS0,VE0',
-988 silly registry.get     vary: 'Accept' } ]
-989 verbose etag https://registry.npmjs.org/amdefine from cache
-990 silly addNameRange number 2 { name: 'amdefine', range: '>=0.0.4', hasData: true }
-991 silly addNameRange versions [ 'amdefine',
-991 silly addNameRange   [ '0.0.1',
-991 silly addNameRange     '0.0.2',
-991 silly addNameRange     '0.0.3',
-991 silly addNameRange     '0.0.4',
-991 silly addNameRange     '0.0.5',
-991 silly addNameRange     '0.0.6',
-991 silly addNameRange     '0.0.7',
-991 silly addNameRange     '0.0.8',
-991 silly addNameRange     '0.1.0',
-991 silly addNameRange     '0.1.1',
-991 silly addNameRange     '1.0.0' ] ]
-992 verbose addNamed [ 'amdefine', '1.0.0' ]
-993 verbose addNamed [ '1.0.0', '1.0.0' ]
-994 silly lockFile c54e608e-amdefine-1-0-0 amdefine@1.0.0
-995 verbose lock amdefine@1.0.0 /home/andrew/.npm/c54e608e-amdefine-1-0-0.lock
-996 silly lockFile c54e608e-amdefine-1-0-0 amdefine@1.0.0
-997 silly lockFile c54e608e-amdefine-1-0-0 amdefine@1.0.0
-998 silly lockFile 165d2d7b-amdefine-0-0-4 amdefine@>=0.0.4
-999 silly lockFile 165d2d7b-amdefine-0-0-4 amdefine@>=0.0.4
-1000 silly resolved [ { name: 'amdefine',
-1000 silly resolved     description: 'Provide AMD\'s define() API for declaring modules in the AMD format',
-1000 silly resolved     version: '1.0.0',
-1000 silly resolved     homepage: 'http://github.com/jrburke/amdefine',
-1000 silly resolved     author:
-1000 silly resolved      { name: 'James Burke',
-1000 silly resolved        email: 'jrburke@gmail.com',
-1000 silly resolved        url: 'http://github.com/jrburke' },
-1000 silly resolved     license: 'BSD-3-Clause AND MIT',
-1000 silly resolved     repository:
-1000 silly resolved      { type: 'git',
-1000 silly resolved        url: 'git+https://github.com/jrburke/amdefine.git' },
-1000 silly resolved     main: './amdefine.js',
-1000 silly resolved     engines: { node: '>=0.4.2' },
-1000 silly resolved     gitHead: '578bc4a3f7dede33f3f3e10edde0c1607005d761',
-1000 silly resolved     bugs: { url: 'https://github.com/jrburke/amdefine/issues' },
-1000 silly resolved     _id: 'amdefine@1.0.0',
-1000 silly resolved     scripts: {},
-1000 silly resolved     _shasum: 'fd17474700cb5cc9c2b709f0be9d23ce3c198c33',
-1000 silly resolved     _from: 'amdefine@>=0.0.4',
-1000 silly resolved     _npmVersion: '2.12.1',
-1000 silly resolved     _nodeVersion: '0.10.36',
-1000 silly resolved     _npmUser: { name: 'jrburke', email: 'jrburke@gmail.com' },
-1000 silly resolved     maintainers: [ [Object] ],
-1000 silly resolved     dist:
-1000 silly resolved      { shasum: 'fd17474700cb5cc9c2b709f0be9d23ce3c198c33',
-1000 silly resolved        tarball: 'http://registry.npmjs.org/amdefine/-/amdefine-1.0.0.tgz' },
-1000 silly resolved     directories: {},
-1000 silly resolved     _resolved: 'https://registry.npmjs.org/amdefine/-/amdefine-1.0.0.tgz',
-1000 silly resolved     readme: 'ERROR: No README data found!' } ]
-1001 info install amdefine@1.0.0 into /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map
-1002 info installOne amdefine@1.0.0
-1003 verbose node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine unbuild
-1004 verbose tar unpack /home/andrew/.npm/amdefine/1.0.0/package.tgz
-1005 silly lockFile 05dcb8ef-source-map-node-modules-amdefine tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine
-1006 verbose lock tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine /home/andrew/.npm/05dcb8ef-source-map-node-modules-amdefine.lock
-1007 silly lockFile c8919cb1-w-npm-amdefine-1-0-0-package-tgz tar:///home/andrew/.npm/amdefine/1.0.0/package.tgz
-1008 verbose lock tar:///home/andrew/.npm/amdefine/1.0.0/package.tgz /home/andrew/.npm/c8919cb1-w-npm-amdefine-1-0-0-package-tgz.lock
-1009 silly gunzTarPerm modes [ '775', '664' ]
-1010 silly gunzTarPerm extractEntry package.json
-1011 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
-1012 silly gunzTarPerm extractEntry README.md
-1013 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
-1014 silly gunzTarPerm extractEntry LICENSE
-1015 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
-1016 silly gunzTarPerm extractEntry amdefine.js
-1017 silly gunzTarPerm modified mode [ 'amdefine.js', 420, 436 ]
-1018 silly gunzTarPerm extractEntry intercept.js
-1019 silly gunzTarPerm modified mode [ 'intercept.js', 420, 436 ]
-1020 silly lockFile 05dcb8ef-source-map-node-modules-amdefine tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine
-1021 silly lockFile 05dcb8ef-source-map-node-modules-amdefine tar:///home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine
-1022 silly lockFile c8919cb1-w-npm-amdefine-1-0-0-package-tgz tar:///home/andrew/.npm/amdefine/1.0.0/package.tgz
-1023 silly lockFile c8919cb1-w-npm-amdefine-1-0-0-package-tgz tar:///home/andrew/.npm/amdefine/1.0.0/package.tgz
-1024 info preinstall amdefine@1.0.0
-1025 verbose readDependencies using package.json deps
-1026 verbose readDependencies using package.json deps
-1027 silly resolved []
-1028 verbose about to build /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine
-1029 info build /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules/amdefine
-1030 verbose linkStuff [ false,
-1030 verbose linkStuff   false,
-1030 verbose linkStuff   false,
-1030 verbose linkStuff   '/home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map/node_modules' ]
-1031 info linkStuff amdefine@1.0.0
-1032 verbose linkBins amdefine@1.0.0
-1033 verbose linkMans amdefine@1.0.0
-1034 verbose rebuildBundles amdefine@1.0.0
-1035 info install amdefine@1.0.0
-1036 info postinstall amdefine@1.0.0
-1037 verbose about to build /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map
-1038 info build /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules/source-map
-1039 verbose linkStuff [ false,
-1039 verbose linkStuff   false,
-1039 verbose linkStuff   false,
-1039 verbose linkStuff   '/home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform/node_modules' ]
-1040 info linkStuff source-map@0.1.31
-1041 verbose linkBins source-map@0.1.31
-1042 verbose linkMans source-map@0.1.31
-1043 verbose rebuildBundles source-map@0.1.31
-1044 verbose rebuildBundles [ 'amdefine' ]
-1045 info install source-map@0.1.31
-1046 info postinstall source-map@0.1.31
-1047 verbose about to build /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform
-1048 info build /home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules/jstransform
-1049 verbose linkStuff [ false,
-1049 verbose linkStuff   false,
-1049 verbose linkStuff   false,
-1049 verbose linkStuff   '/home/andrew/cybervision/node_modules/react/node_modules/envify/node_modules' ]
-1050 info linkStuff jstransform@10.1.0
-1051 verbose linkBins jstransform@10.1.0
-1052 verbose linkMans jstransform@10.1.0
-1053 verbose rebuildBundles jstransform@10.1.0
-1054 verbose rebuildBundles [ '.bin', 'base62', 'esprima-fb', 'source-map' ]
-1055 info install jstransform@10.1.0
-1056 info postinstall jstransform@10.1.0
-1057 verbose about to build /home/andrew/cybervision/node_modules/react/node_modules/envify
-1058 info build /home/andrew/cybervision/node_modules/react/node_modules/envify
-1059 verbose linkStuff [ false,
-1059 verbose linkStuff   false,
-1059 verbose linkStuff   false,
-1059 verbose linkStuff   '/home/andrew/cybervision/node_modules/react/node_modules' ]
-1060 info linkStuff envify@3.4.0
-1061 verbose linkBins envify@3.4.0
-1062 verbose link bins [ { envify: 'bin/envify' },
-1062 verbose link bins   '/home/andrew/cybervision/node_modules/react/node_modules/.bin',
-1062 verbose link bins   false ]
-1063 verbose linkMans envify@3.4.0
-1064 verbose rebuildBundles envify@3.4.0
-1065 verbose rebuildBundles [ 'jstransform', 'through' ]
-1066 info install envify@3.4.0
-1067 info postinstall envify@3.4.0
-1068 verbose about to build /home/andrew/cybervision/node_modules/react
-1069 info build /home/andrew/cybervision/node_modules/react
-1070 verbose linkStuff [ false, false, false, '/home/andrew/cybervision/node_modules' ]
-1071 info linkStuff react@0.12.2
-1072 verbose linkBins react@0.12.2
-1073 verbose linkMans react@0.12.2
-1074 verbose rebuildBundles react@0.12.2
-1075 verbose rebuildBundles [ '.bin', 'envify' ]
-1076 info install react@0.12.2
-1077 info postinstall react@0.12.2
-1078 info build /home/andrew/cybervision
-1079 verbose linkStuff [ false, false, false, '/home/andrew' ]
-1080 info linkStuff cybervision@0.0.0
-1081 verbose linkBins cybervision@0.0.0
-1082 verbose linkMans cybervision@0.0.0
-1083 verbose rebuildBundles cybervision@0.0.0
-1084 verbose rebuildBundles [ '.bin',
-1084 verbose rebuildBundles   'babel',
-1084 verbose rebuildBundles   'babel-core',
-1084 verbose rebuildBundles   'babel-loader',
-1084 verbose rebuildBundles   'css-loader',
-1084 verbose rebuildBundles   'eslint',
-1084 verbose rebuildBundles   'eslint-loader',
-1084 verbose rebuildBundles   'eslint-plugin-react',
-1084 verbose rebuildBundles   'file-loader',
-1084 verbose rebuildBundles   'grunt',
-1084 verbose rebuildBundles   'grunt-contrib-clean',
-1084 verbose rebuildBundles   'grunt-contrib-connect',
-1084 verbose rebuildBundles   'grunt-contrib-copy',
-1084 verbose rebuildBundles   'grunt-karma',
-1084 verbose rebuildBundles   'grunt-open',
-1084 verbose rebuildBundles   'grunt-webpack',
-1084 verbose rebuildBundles   'jasmine-core',
-1084 verbose rebuildBundles   'karma',
-1084 verbose rebuildBundles   'karma-jasmine',
-1084 verbose rebuildBundles   'karma-phantomjs-launcher',
-1084 verbose rebuildBundles   'karma-script-launcher',
-1084 verbose rebuildBundles   'karma-webpack',
-1084 verbose rebuildBundles   'less',
-1084 verbose rebuildBundles   'less-loader',
-1084 verbose rebuildBundles   'load-grunt-tasks',
-1084 verbose rebuildBundles   'normalize.css',
-1084 verbose rebuildBundles   'react',
-1084 verbose rebuildBundles   'react-ajax',
-1084 verbose rebuildBundles   'react-hot-loader',
-1084 verbose rebuildBundles   'react-router',
-1084 verbose rebuildBundles   'style-loader',
-1084 verbose rebuildBundles   'url-loader',
-1084 verbose rebuildBundles   'webpack',
-1084 verbose rebuildBundles   'webpack-dev-server' ]
-1085 verbose rebuild bundle /home/andrew/cybervision/node_modules/babel-core
-1086 info build /home/andrew/cybervision/node_modules/babel-core
-1087 info preinstall babel-core@5.8.29
-1088 verbose linkStuff [ false, false, false, '/home/andrew/cybervision/node_modules' ]
-1089 info linkStuff babel-core@5.8.29
-1090 verbose linkBins babel-core@5.8.29
-1091 verbose linkMans babel-core@5.8.29
-1092 verbose rebuildBundles babel-core@5.8.29
-1093 verbose rebuildBundles [ '.bin',
-1093 verbose rebuildBundles   'babel-plugin-constant-folding',
-1093 verbose rebuildBundles   'babel-plugin-dead-code-elimination',
-1093 verbose rebuildBundles   'babel-plugin-eval',
-1093 verbose rebuildBundles   'babel-plugin-inline-environment-variables',
-1093 verbose rebuildBundles   'babel-plugin-jscript',
-1093 verbose rebuildBundles   'babel-plugin-member-expression-literals',
-1093 verbose rebuildBundles   'babel-plugin-property-literals',
-1093 verbose rebuildBundles   'babel-plugin-proto-to-assign',
-1093 verbose rebuildBundles   'babel-plugin-react-constant-elements',
-1093 verbose rebuildBundles   'babel-plugin-react-display-name',
-1093 verbose rebuildBundles   'babel-plugin-remove-console',
-1093 verbose rebuildBundles   'babel-plugin-remove-debugger',
-1093 verbose rebuildBundles   'babel-plugin-runtime',
-1093 verbose rebuildBundles   'babel-plugin-undeclared-variables-check',
-1093 verbose rebuildBundles   'babel-plugin-undefined-to-void',
-1093 verbose rebuildBundles   'babylon',
-1093 verbose rebuildBundles   'bluebird',
-1093 verbose rebuildBundles   'chalk',
-1093 verbose rebuildBundles   'convert-source-map',
-1093 verbose rebuildBundles   'core-js',
-1093 verbose rebuildBundles   'debug',
-1093 verbose rebuildBundles   'detect-indent',
-1093 verbose rebuildBundles   'esutils',
-1093 verbose rebuildBundles   'fs-readdir-recursive',
-1093 verbose rebuildBundles   'globals',
-1093 verbose rebuildBundles   'home-or-tmp',
-1093 verbose rebuildBundles   'is-integer',
-1093 verbose rebuildBundles   'js-tokens',
-1093 verbose rebuildBundles   'json5',
-1093 verbose rebuildBundles   'line-numbers',
-1093 verbose rebuildBundles   'lodash',
-1093 verbose rebuildBundles   'minimatch',
-1093 verbose rebuildBundles   'output-file-sync',
-1093 verbose rebuildBundles   'path-exists',
-1093 verbose rebuildBundles   'path-is-absolute',
-1093 verbose rebuildBundles   'private',
-1093 verbose rebuildBundles   'regenerator',
-1093 verbose rebuildBundles   'regexpu',
-1093 verbose rebuildBundles   'repeating',
-1093 verbose rebuildBundles   'resolve',
-1093 verbose rebuildBundles   'shebang-regex',
-1093 verbose rebuildBundles   'slash',
-1093 verbose rebuildBundles   'source-map',
-1093 verbose rebuildBundles   'source-map-support',
-1093 verbose rebuildBundles   'to-fast-properties',
-1093 verbose rebuildBundles   'trim-right',
-1093 verbose rebuildBundles   'try-resolve' ]
-1094 info install babel-core@5.8.29
-1095 info postinstall babel-core@5.8.29
-1096 verbose rebuild bundle /home/andrew/cybervision/node_modules/file-loader
-1097 info build /home/andrew/cybervision/node_modules/file-loader
-1098 info preinstall file-loader@0.8.4
-1099 verbose linkStuff [ false, false, false, '/home/andrew/cybervision/node_modules' ]
-1100 info linkStuff file-loader@0.8.4
-1101 verbose linkBins file-loader@0.8.4
-1102 verbose linkMans file-loader@0.8.4
-1103 verbose rebuildBundles file-loader@0.8.4
-1104 verbose rebuildBundles [ 'loader-utils' ]
-1105 info install file-loader@0.8.4
-1106 info postinstall file-loader@0.8.4
-1107 verbose rebuild bundle /home/andrew/cybervision/node_modules/less
-1108 info build /home/andrew/cybervision/node_modules/less
-1109 info preinstall less@2.5.3
-1110 verbose linkStuff [ false, false, false, '/home/andrew/cybervision/node_modules' ]
-1111 info linkStuff less@2.5.3
-1112 verbose linkBins less@2.5.3
-1113 verbose link bins [ { lessc: './bin/lessc' },
-1113 verbose link bins   '/home/andrew/cybervision/node_modules/.bin',
-1113 verbose link bins   false ]
-1114 verbose linkMans less@2.5.3
-1115 verbose rebuildBundles less@2.5.3
-1116 verbose rebuildBundles [ '.bin',
-1116 verbose rebuildBundles   'errno',
-1116 verbose rebuildBundles   'graceful-fs',
-1116 verbose rebuildBundles   'image-size',
-1116 verbose rebuildBundles   'mime',
-1116 verbose rebuildBundles   'mkdirp',
-1116 verbose rebuildBundles   'promise',
-1116 verbose rebuildBundles   'request',
-1116 verbose rebuildBundles   'source-map' ]
-1117 info install less@2.5.3
-1118 info postinstall less@2.5.3
-1119 info install cybervision@0.0.0
-1120 info postinstall cybervision@0.0.0
-1121 info prepublish cybervision@0.0.0
-1122 error peerinvalid The package react does not satisfy its siblings' peerDependencies requirements!
-1122 error peerinvalid Peer react-router@0.13.4 wants react@0.13.x
-1123 error System Linux 3.13.0-66-generic
-1124 error command "/home/andrew/.nvm/v0.10.36/bin/node" "/home/andrew/.nvm/v0.10.36/bin/npm" "install"
-1125 error cwd /home/andrew/cybervision
-1126 error node -v v0.10.36
-1127 error npm -v 1.4.28
-1128 error code EPEERINVALID
-1129 verbose exit [ 1, true ]
+5 verbose cache add [ 'react-router-bootstrap', null ]
+6 verbose cache add name=undefined spec="react-router-bootstrap" args=["react-router-bootstrap",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'react-router-bootstrap',
+7 verbose parsed url   path: 'react-router-bootstrap',
+7 verbose parsed url   href: 'react-router-bootstrap' }
+8 silly lockFile 16577684-react-router-bootstrap react-router-bootstrap
+9 verbose lock react-router-bootstrap /home/andrew/.npm/16577684-react-router-bootstrap.lock
+10 silly lockFile 16577684-react-router-bootstrap react-router-bootstrap
+11 silly lockFile 16577684-react-router-bootstrap react-router-bootstrap
+12 verbose addNamed [ 'react-router-bootstrap', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 2d23b908-react-router-bootstrap react-router-bootstrap@
+15 verbose lock react-router-bootstrap@ /home/andrew/.npm/2d23b908-react-router-bootstrap.lock
+16 silly addNameRange { name: 'react-router-bootstrap', range: '*', hasData: false }
+17 verbose request where is /react-router-bootstrap
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id fbfee2129b4f0259
+20 verbose url raw /react-router-bootstrap
+21 verbose url resolving [ 'https://registry.npmjs.org/', './react-router-bootstrap' ]
+22 verbose url resolved https://registry.npmjs.org/react-router-bootstrap
+23 verbose request where is https://registry.npmjs.org/react-router-bootstrap
+24 info trying registry request attempt 1 at 13:24:43
+25 http GET https://registry.npmjs.org/react-router-bootstrap
+26 http 200 https://registry.npmjs.org/react-router-bootstrap
+27 silly registry.get cb [ 200,
+27 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"BFN8T2XJ5K2TVSN0ND94UYWCX"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '96209',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Thu, 29 Oct 2015 11:24:43 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '37',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-fra1227-FRA',
+27 silly registry.get     'x-cache': 'HIT',
+27 silly registry.get     'x-cache-hits': '1',
+27 silly registry.get     'x-timer': 'S1446117883.825226,VS0,VE0',
+27 silly registry.get     vary: 'Accept' } ]
+28 silly addNameRange number 2 { name: 'react-router-bootstrap', range: '*', hasData: true }
+29 silly addNameRange versions [ 'react-router-bootstrap',
+29 silly addNameRange   [ '0.0.2',
+29 silly addNameRange     '0.0.3',
+29 silly addNameRange     '0.1.0',
+29 silly addNameRange     '0.2.0',
+29 silly addNameRange     '0.3.0',
+29 silly addNameRange     '0.3.1',
+29 silly addNameRange     '0.4.0',
+29 silly addNameRange     '0.4.1',
+29 silly addNameRange     '0.4.2',
+29 silly addNameRange     '0.4.3',
+29 silly addNameRange     '0.4.4',
+29 silly addNameRange     '0.4.5',
+29 silly addNameRange     '0.4.6',
+29 silly addNameRange     '0.5.0',
+29 silly addNameRange     '0.6.0',
+29 silly addNameRange     '0.7.0',
+29 silly addNameRange     '0.7.1',
+29 silly addNameRange     '0.7.2',
+29 silly addNameRange     '0.8.0',
+29 silly addNameRange     '0.8.1',
+29 silly addNameRange     '0.8.2',
+29 silly addNameRange     '0.8.3',
+29 silly addNameRange     '0.9.0',
+29 silly addNameRange     '0.9.1',
+29 silly addNameRange     '0.10.0',
+29 silly addNameRange     '0.11.0',
+29 silly addNameRange     '0.12.0',
+29 silly addNameRange     '0.12.1',
+29 silly addNameRange     '0.13.0',
+29 silly addNameRange     '0.13.1',
+29 silly addNameRange     '0.13.2',
+29 silly addNameRange     '0.13.3',
+29 silly addNameRange     '0.13.4',
+29 silly addNameRange     '0.13.5',
+29 silly addNameRange     '0.13.6',
+29 silly addNameRange     '0.14.0',
+29 silly addNameRange     '0.15.0',
+29 silly addNameRange     '0.16.0',
+29 silly addNameRange     '0.17.0',
+29 silly addNameRange     '0.17.1',
+29 silly addNameRange     '0.17.2',
+29 silly addNameRange     '0.18.0',
+29 silly addNameRange     '0.18.1',
+29 silly addNameRange     '0.19.0',
+29 silly addNameRange     '0.19.1',
+29 silly addNameRange     '0.19.2',
+29 silly addNameRange     '0.19.3' ] ]
+30 verbose addNamed [ 'react-router-bootstrap', '0.19.3' ]
+31 verbose addNamed [ '0.19.3', '0.19.3' ]
+32 silly lockFile 424dd7fb-react-router-bootstrap-0-19-3 react-router-bootstrap@0.19.3
+33 verbose lock react-router-bootstrap@0.19.3 /home/andrew/.npm/424dd7fb-react-router-bootstrap-0-19-3.lock
+34 silly lockFile b834b9db-eact-router-bootstrap-0-19-3-tgz https://registry.npmjs.org/react-router-bootstrap/-/react-router-bootstrap-0.19.3.tgz
+35 verbose lock https://registry.npmjs.org/react-router-bootstrap/-/react-router-bootstrap-0.19.3.tgz /home/andrew/.npm/b834b9db-eact-router-bootstrap-0-19-3-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-router-bootstrap/-/react-router-bootstrap-0.19.3.tgz',
+36 verbose addRemoteTarball   '5c41b116f86fed437dfee3f74d88254d562f6fd7' ]
+37 info retry fetch attempt 1 at 13:24:43
+38 verbose fetch to= /tmp/npm-4637-IGVRt96e/registry.npmjs.org/react-router-bootstrap/-/react-router-bootstrap-0.19.3.tgz
+39 http GET https://registry.npmjs.org/react-router-bootstrap/-/react-router-bootstrap-0.19.3.tgz
+40 http 200 https://registry.npmjs.org/react-router-bootstrap/-/react-router-bootstrap-0.19.3.tgz
+41 silly lockFile b834b9db-eact-router-bootstrap-0-19-3-tgz https://registry.npmjs.org/react-router-bootstrap/-/react-router-bootstrap-0.19.3.tgz
+42 silly lockFile b834b9db-eact-router-bootstrap-0-19-3-tgz https://registry.npmjs.org/react-router-bootstrap/-/react-router-bootstrap-0.19.3.tgz
+43 silly lockFile 424dd7fb-react-router-bootstrap-0-19-3 react-router-bootstrap@0.19.3
+44 silly lockFile 424dd7fb-react-router-bootstrap-0-19-3 react-router-bootstrap@0.19.3
+45 silly lockFile 2d23b908-react-router-bootstrap react-router-bootstrap@
+46 silly lockFile 2d23b908-react-router-bootstrap react-router-bootstrap@
+47 silly resolved [ { name: 'react-router-bootstrap',
+47 silly resolved     version: '0.19.3',
+47 silly resolved     description: 'Integration between React Router and React-Bootstrap',
+47 silly resolved     main: './lib/index.js',
+47 silly resolved     scripts:
+47 silly resolved      { prepublish: 'npm run build',
+47 silly resolved        build: 'rimraf lib && babel src --out-dir=lib && webpack && webpack -p && npm run bower-prepare',
+47 silly resolved        test: 'npm run lint && karma start --single-run',
+47 silly resolved        tdd: 'karma start',
+47 silly resolved        'visual-test': 'open http://localhost:8080/ && webpack-dev-server --config webpack.visual.config.babel.js',
+47 silly resolved        lint: 'eslint *.babel.js src tests',
+47 silly resolved        'bower-prepare': 'babel-node scripts/bower-prepare.js',
+47 silly resolved        release: 'release' },
+47 silly resolved     repository:
+47 silly resolved      { type: 'git',
+47 silly resolved        url: 'git+ssh://git@github.com/react-bootstrap/react-router-bootstrap.git' },
+47 silly resolved     keywords: [ 'react', 'react-router', 'react-bootstrap' ],
+47 silly resolved     author: { name: 'Matt Smith', email: 'mtscout6@gmail.com' },
+47 silly resolved     license: 'Apache-2.0',
+47 silly resolved     bugs: { url: 'https://github.com/react-bootstrap/react-router-bootstrap/issues' },
+47 silly resolved     homepage: 'https://github.com/react-bootstrap/react-router-bootstrap',
+47 silly resolved     peerDependencies: { react: '>=0.13.0', 'react-router': '>=1.0.0-rc3' },
+47 silly resolved     devDependencies:
+47 silly resolved      { babel: '^5.8.23',
+47 silly resolved        'babel-core': '^5.8.25',
+47 silly resolved        'babel-eslint': '^4.1.3',
+47 silly resolved        'babel-loader': '^5.3.2',
+47 silly resolved        bootstrap: '^3.3.5',
+47 silly resolved        colors: '^1.1.2',
+47 silly resolved        'css-loader': '^0.19.0',
+47 silly resolved        'es5-shim': '^4.1.14',
+47 silly resolved        eslint: '^1.7.1',
+47 silly resolved        'eslint-config-airbnb': '^0.1.0',
+47 silly resolved        'eslint-plugin-babel': '^2.1.1',
+47 silly resolved        'eslint-plugin-mocha': '^1.0.0',
+47 silly resolved        'eslint-plugin-react': '^3.5.1',
+47 silly resolved        'file-loader': '^0.8.4',
+47 silly resolved        history: '^1.12.5',
+47 silly resolved        'html-webpack-plugin': '^1.6.2',
+47 silly resolved        karma: '^0.13.11',
+47 silly resolved        'karma-cli': '^0.1.1',
+47 silly resolved        'karma-mocha': '^0.2.0',
+47 silly resolved        'karma-mocha-reporter': '^1.1.1',
+47 silly resolved        'karma-phantomjs-launcher': '^0.2.1',
+47 silly resolved        'karma-sinon-chai': '^1.1.0',
+47 silly resolved        'karma-sourcemap-loader': '^0.3.6',
+47 silly resolved        'karma-webpack': '^1.7.0',
+47 silly resolved        less: '^2.5.3',
+47 silly resolved        'less-loader': '^2.2.1',
+47 silly resolved        lodash: '^3.10.1',
+47 silly resolved        mocha: '^2.3.3',
+47 silly resolved        'mt-changelog': '^0.6.2',
+47 silly resolved        'node-libs-browser': '^0.5.3',
+47 silly resolved        phantomjs: '^1.9.18',
+47 silly resolved        react: '^0.14.0',
+47 silly resolved        'react-bootstrap': '^0.27.2',
+47 silly resolved        'react-dom': '^0.14.0',
+47 silly resolved        'react-router': '^1.0.0-rc3',
+47 silly resolved        'release-script': '^0.5.4',
+47 silly resolved        rimraf: '^2.4.3',
+47 silly resolved        shelljs: '^0.5.3',
+47 silly resolved        'style-loader': '^0.12.4',
+47 silly resolved        'url-loader': '^0.5.6',
+47 silly resolved        webpack: '^1.12.2',
+47 silly resolved        'webpack-dev-server': '^1.12.0',
+47 silly resolved        yargs: '^3.27.0' },
+47 silly resolved     files: [ 'README', 'CHANGELOG.md', 'lib' ],
+47 silly resolved     'release-script': { bowerRepo: 'git@github.com:react-bootstrap/react-router-bootstrap-bower.git' },
+47 silly resolved     gitHead: 'faf65588d72b8dd709f0f2e616a65915b52043e8',
+47 silly resolved     _id: 'react-router-bootstrap@0.19.3',
+47 silly resolved     _shasum: '5c41b116f86fed437dfee3f74d88254d562f6fd7',
+47 silly resolved     _from: 'react-router-bootstrap@',
+47 silly resolved     _npmVersion: '2.14.8',
+47 silly resolved     _nodeVersion: '4.2.1',
+47 silly resolved     _npmUser: { name: 'taion', email: 'tesrin@gmail.com' },
+47 silly resolved     dist:
+47 silly resolved      { shasum: '5c41b116f86fed437dfee3f74d88254d562f6fd7',
+47 silly resolved        tarball: 'http://registry.npmjs.org/react-router-bootstrap/-/react-router-bootstrap-0.19.3.tgz' },
+47 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+47 silly resolved     directories: {},
+47 silly resolved     _resolved: 'https://registry.npmjs.org/react-router-bootstrap/-/react-router-bootstrap-0.19.3.tgz' } ]
+48 info install react-router-bootstrap@0.19.3 into /home/andrew/cybervision
+49 info installOne react-router-bootstrap@0.19.3
+50 verbose node_modules/react-router-bootstrap unbuild
+51 verbose tar unpack /home/andrew/.npm/react-router-bootstrap/0.19.3/package.tgz
+52 silly lockFile 4b23d125-e-modules-react-router-bootstrap tar:///home/andrew/cybervision/node_modules/react-router-bootstrap
+53 verbose lock tar:///home/andrew/cybervision/node_modules/react-router-bootstrap /home/andrew/.npm/4b23d125-e-modules-react-router-bootstrap.lock
+54 silly lockFile e4b5296e-ter-bootstrap-0-19-3-package-tgz tar:///home/andrew/.npm/react-router-bootstrap/0.19.3/package.tgz
+55 verbose lock tar:///home/andrew/.npm/react-router-bootstrap/0.19.3/package.tgz /home/andrew/.npm/e4b5296e-ter-bootstrap-0-19-3-package-tgz.lock
+56 silly gunzTarPerm modes [ '775', '664' ]
+57 silly gunzTarPerm extractEntry package.json
+58 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+59 silly gunzTarPerm extractEntry README.md
+60 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+61 silly gunzTarPerm extractEntry lib/IndexLinkContainer.js
+62 silly gunzTarPerm modified mode [ 'lib/IndexLinkContainer.js', 420, 436 ]
+63 silly gunzTarPerm extractEntry lib/LinkContainer.js
+64 silly gunzTarPerm modified mode [ 'lib/LinkContainer.js', 420, 436 ]
+65 silly gunzTarPerm extractEntry lib/ReactRouterBootstrap.js
+66 silly gunzTarPerm modified mode [ 'lib/ReactRouterBootstrap.js', 420, 436 ]
+67 silly gunzTarPerm extractEntry lib/ReactRouterBootstrap.min.js
+68 silly gunzTarPerm modified mode [ 'lib/ReactRouterBootstrap.min.js', 420, 436 ]
+69 silly gunzTarPerm extractEntry lib/index.js
+70 silly gunzTarPerm modified mode [ 'lib/index.js', 420, 436 ]
+71 silly gunzTarPerm extractEntry lib/ReactRouterBootstrap.min.js.map
+72 silly gunzTarPerm modified mode [ 'lib/ReactRouterBootstrap.min.js.map', 420, 436 ]
+73 silly gunzTarPerm extractEntry CHANGELOG.md
+74 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+75 silly gunzTarPerm extractEntry node_modules/history/package.json
+76 silly gunzTarPerm modified mode [ 'node_modules/history/package.json', 420, 436 ]
+77 silly gunzTarPerm extractEntry node_modules/history/.npmignore
+78 silly gunzTarPerm modified mode [ 'node_modules/history/.npmignore', 420, 436 ]
+79 silly gunzTarPerm extractEntry node_modules/history/README.md
+80 silly gunzTarPerm modified mode [ 'node_modules/history/README.md', 420, 436 ]
+81 silly gunzTarPerm extractEntry node_modules/history/CHANGES.md
+82 silly gunzTarPerm modified mode [ 'node_modules/history/CHANGES.md', 420, 436 ]
+83 silly gunzTarPerm extractEntry node_modules/history/docs/README.md
+84 silly gunzTarPerm modified mode [ 'node_modules/history/docs/README.md', 420, 436 ]
+85 silly gunzTarPerm extractEntry node_modules/history/docs/BasenameSupport.md
+86 silly gunzTarPerm modified mode [ 'node_modules/history/docs/BasenameSupport.md', 420, 436 ]
+87 silly gunzTarPerm extractEntry node_modules/history/docs/ConfirmingNavigation.md
+88 silly gunzTarPerm modified mode [ 'node_modules/history/docs/ConfirmingNavigation.md', 420, 436 ]
+89 silly gunzTarPerm extractEntry node_modules/history/docs/GettingStarted.md
+90 silly gunzTarPerm modified mode [ 'node_modules/history/docs/GettingStarted.md', 420, 436 ]
+91 silly gunzTarPerm extractEntry node_modules/history/docs/HashHistoryCaveats.md
+92 silly gunzTarPerm modified mode [ 'node_modules/history/docs/HashHistoryCaveats.md', 420, 436 ]
+93 silly gunzTarPerm extractEntry node_modules/history/docs/Location.md
+94 silly gunzTarPerm modified mode [ 'node_modules/history/docs/Location.md', 420, 436 ]
+95 silly gunzTarPerm extractEntry node_modules/history/docs/QuerySupport.md
+96 silly gunzTarPerm modified mode [ 'node_modules/history/docs/QuerySupport.md', 420, 436 ]
+97 silly gunzTarPerm extractEntry node_modules/history/docs/Terms.md
+98 silly gunzTarPerm modified mode [ 'node_modules/history/docs/Terms.md', 420, 436 ]
+99 silly gunzTarPerm extractEntry node_modules/history/lib/Actions.js
+100 silly gunzTarPerm modified mode [ 'node_modules/history/lib/Actions.js', 420, 436 ]
+101 silly gunzTarPerm extractEntry node_modules/history/lib/createDOMHistory.js
+102 silly gunzTarPerm modified mode [ 'node_modules/history/lib/createDOMHistory.js', 420, 436 ]
+103 silly gunzTarPerm extractEntry node_modules/history/lib/createHashHistory.js
+104 silly gunzTarPerm modified mode [ 'node_modules/history/lib/createHashHistory.js', 420, 436 ]
+105 silly gunzTarPerm extractEntry node_modules/history/lib/createHistory.js
+106 silly gunzTarPerm modified mode [ 'node_modules/history/lib/createHistory.js', 420, 436 ]
+107 silly gunzTarPerm extractEntry node_modules/history/lib/createLocation.js
+108 silly gunzTarPerm modified mode [ 'node_modules/history/lib/createLocation.js', 420, 436 ]
+109 silly gunzTarPerm extractEntry node_modules/history/lib/createBrowserHistory.js
+110 silly gunzTarPerm modified mode [ 'node_modules/history/lib/createBrowserHistory.js', 420, 436 ]
+111 silly gunzTarPerm extractEntry node_modules/history/lib/deprecate.js
+112 silly gunzTarPerm modified mode [ 'node_modules/history/lib/deprecate.js', 420, 436 ]
+113 silly gunzTarPerm extractEntry node_modules/history/lib/enableBeforeUnload.js
+114 silly gunzTarPerm modified mode [ 'node_modules/history/lib/enableBeforeUnload.js', 420, 436 ]
+115 silly gunzTarPerm extractEntry node_modules/history/lib/enableQueries.js
+116 silly gunzTarPerm modified mode [ 'node_modules/history/lib/enableQueries.js', 420, 436 ]
+117 silly gunzTarPerm extractEntry node_modules/history/lib/index.js
+118 silly gunzTarPerm modified mode [ 'node_modules/history/lib/index.js', 420, 436 ]
+119 silly gunzTarPerm extractEntry node_modules/history/lib/parsePath.js
+120 silly gunzTarPerm modified mode [ 'node_modules/history/lib/parsePath.js', 420, 436 ]
+121 silly gunzTarPerm extractEntry node_modules/history/lib/ExecutionEnvironment.js
+122 silly gunzTarPerm modified mode [ 'node_modules/history/lib/ExecutionEnvironment.js', 420, 436 ]
+123 silly gunzTarPerm extractEntry node_modules/history/lib/runTransitionHook.js
+124 silly gunzTarPerm modified mode [ 'node_modules/history/lib/runTransitionHook.js', 420, 436 ]
+125 silly gunzTarPerm extractEntry node_modules/history/lib/DOMUtils.js
+126 silly gunzTarPerm modified mode [ 'node_modules/history/lib/DOMUtils.js', 420, 436 ]
+127 silly gunzTarPerm extractEntry node_modules/history/lib/useBasename.js
+128 silly gunzTarPerm modified mode [ 'node_modules/history/lib/useBasename.js', 420, 436 ]
+129 silly gunzTarPerm extractEntry node_modules/history/lib/DOMStateStorage.js
+130 silly gunzTarPerm modified mode [ 'node_modules/history/lib/DOMStateStorage.js', 420, 436 ]
+131 silly gunzTarPerm extractEntry node_modules/history/lib/useBeforeUnload.js
+132 silly gunzTarPerm modified mode [ 'node_modules/history/lib/useBeforeUnload.js', 420, 436 ]
+133 silly gunzTarPerm extractEntry node_modules/history/lib/AsyncUtils.js
+134 silly gunzTarPerm modified mode [ 'node_modules/history/lib/AsyncUtils.js', 420, 436 ]
+135 silly gunzTarPerm extractEntry node_modules/history/lib/useQueries.js
+136 silly gunzTarPerm modified mode [ 'node_modules/history/lib/useQueries.js', 420, 436 ]
+137 silly gunzTarPerm extractEntry node_modules/history/lib/createMemoryHistory.js
+138 silly gunzTarPerm modified mode [ 'node_modules/history/lib/createMemoryHistory.js', 420, 436 ]
+139 silly gunzTarPerm extractEntry node_modules/history/modules/Actions.js
+140 silly gunzTarPerm modified mode [ 'node_modules/history/modules/Actions.js', 420, 436 ]
+141 silly gunzTarPerm extractEntry node_modules/history/modules/createDOMHistory.js
+142 silly gunzTarPerm modified mode [ 'node_modules/history/modules/createDOMHistory.js', 420, 436 ]
+143 silly gunzTarPerm extractEntry node_modules/history/modules/createHashHistory.js
+144 silly gunzTarPerm modified mode [ 'node_modules/history/modules/createHashHistory.js', 420, 436 ]
+145 silly gunzTarPerm extractEntry node_modules/history/modules/createHistory.js
+146 silly gunzTarPerm modified mode [ 'node_modules/history/modules/createHistory.js', 420, 436 ]
+147 silly gunzTarPerm extractEntry node_modules/history/modules/createLocation.js
+148 silly gunzTarPerm modified mode [ 'node_modules/history/modules/createLocation.js', 420, 436 ]
+149 silly gunzTarPerm extractEntry node_modules/history/modules/createBrowserHistory.js
+150 silly gunzTarPerm modified mode [ 'node_modules/history/modules/createBrowserHistory.js',
+150 silly gunzTarPerm   420,
+150 silly gunzTarPerm   436 ]
+151 silly gunzTarPerm extractEntry node_modules/history/modules/deprecate.js
+152 silly gunzTarPerm modified mode [ 'node_modules/history/modules/deprecate.js', 420, 436 ]
+153 silly gunzTarPerm extractEntry node_modules/history/modules/enableBeforeUnload.js
+154 silly gunzTarPerm modified mode [ 'node_modules/history/modules/enableBeforeUnload.js',
+154 silly gunzTarPerm   420,
+154 silly gunzTarPerm   436 ]
+155 silly gunzTarPerm extractEntry node_modules/history/modules/enableQueries.js
+156 silly gunzTarPerm modified mode [ 'node_modules/history/modules/enableQueries.js', 420, 436 ]
+157 silly gunzTarPerm extractEntry node_modules/history/modules/index.js
+158 silly gunzTarPerm modified mode [ 'node_modules/history/modules/index.js', 420, 436 ]
+159 silly gunzTarPerm extractEntry node_modules/history/modules/parsePath.js
+160 silly gunzTarPerm modified mode [ 'node_modules/history/modules/parsePath.js', 420, 436 ]
+161 silly gunzTarPerm extractEntry node_modules/history/modules/ExecutionEnvironment.js
+162 silly gunzTarPerm modified mode [ 'node_modules/history/modules/ExecutionEnvironment.js',
+162 silly gunzTarPerm   420,
+162 silly gunzTarPerm   436 ]
+163 silly gunzTarPerm extractEntry node_modules/history/modules/runTransitionHook.js
+164 silly gunzTarPerm modified mode [ 'node_modules/history/modules/runTransitionHook.js', 420, 436 ]
+165 silly gunzTarPerm extractEntry node_modules/history/modules/DOMUtils.js
+166 silly gunzTarPerm modified mode [ 'node_modules/history/modules/DOMUtils.js', 420, 436 ]
+167 silly gunzTarPerm extractEntry node_modules/history/modules/useBasename.js
+168 silly gunzTarPerm modified mode [ 'node_modules/history/modules/useBasename.js', 420, 436 ]
+169 silly gunzTarPerm extractEntry node_modules/history/modules/DOMStateStorage.js
+170 silly gunzTarPerm modified mode [ 'node_modules/history/modules/DOMStateStorage.js', 420, 436 ]
+171 silly gunzTarPerm extractEntry node_modules/history/modules/useBeforeUnload.js
+172 silly gunzTarPerm modified mode [ 'node_modules/history/modules/useBeforeUnload.js', 420, 436 ]
+173 silly gunzTarPerm extractEntry node_modules/history/modules/AsyncUtils.js
+174 silly gunzTarPerm modified mode [ 'node_modules/history/modules/AsyncUtils.js', 420, 436 ]
+175 silly gunzTarPerm extractEntry node_modules/history/modules/useQueries.js
+176 silly gunzTarPerm modified mode [ 'node_modules/history/modules/useQueries.js', 420, 436 ]
+177 silly gunzTarPerm extractEntry node_modules/history/modules/createMemoryHistory.js
+178 silly gunzTarPerm modified mode [ 'node_modules/history/modules/createMemoryHistory.js',
+178 silly gunzTarPerm   420,
+178 silly gunzTarPerm   436 ]
+179 silly gunzTarPerm extractEntry node_modules/history/npm-scripts/postinstall.js
+180 silly gunzTarPerm modified mode [ 'node_modules/history/npm-scripts/postinstall.js', 420, 436 ]
+181 silly gunzTarPerm extractEntry node_modules/history/umd/History.js
+182 silly gunzTarPerm modified mode [ 'node_modules/history/umd/History.js', 420, 436 ]
+183 silly gunzTarPerm extractEntry node_modules/history/umd/History.min.js
+184 silly gunzTarPerm modified mode [ 'node_modules/history/umd/History.min.js', 420, 436 ]
+185 silly gunzTarPerm extractEntry node_modules/history/node_modules/deep-equal/package.json
+186 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/deep-equal/package.json',
+186 silly gunzTarPerm   420,
+186 silly gunzTarPerm   436 ]
+187 silly gunzTarPerm extractEntry node_modules/history/node_modules/deep-equal/LICENSE
+188 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/deep-equal/LICENSE',
+188 silly gunzTarPerm   420,
+188 silly gunzTarPerm   436 ]
+189 silly gunzTarPerm extractEntry node_modules/history/node_modules/deep-equal/index.js
+190 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/deep-equal/index.js',
+190 silly gunzTarPerm   420,
+190 silly gunzTarPerm   436 ]
+191 silly gunzTarPerm extractEntry node_modules/history/node_modules/deep-equal/.travis.yml
+192 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/deep-equal/.travis.yml',
+192 silly gunzTarPerm   420,
+192 silly gunzTarPerm   436 ]
+193 silly gunzTarPerm extractEntry node_modules/history/node_modules/deep-equal/example/cmp.js
+194 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/deep-equal/example/cmp.js',
+194 silly gunzTarPerm   420,
+194 silly gunzTarPerm   436 ]
+195 silly gunzTarPerm extractEntry node_modules/history/node_modules/deep-equal/lib/is_arguments.js
+196 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/deep-equal/lib/is_arguments.js',
+196 silly gunzTarPerm   420,
+196 silly gunzTarPerm   436 ]
+197 silly gunzTarPerm extractEntry node_modules/history/node_modules/deep-equal/lib/keys.js
+198 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/deep-equal/lib/keys.js',
+198 silly gunzTarPerm   420,
+198 silly gunzTarPerm   436 ]
+199 silly gunzTarPerm extractEntry node_modules/history/node_modules/deep-equal/readme.markdown
+200 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/deep-equal/readme.markdown',
+200 silly gunzTarPerm   420,
+200 silly gunzTarPerm   436 ]
+201 silly gunzTarPerm extractEntry node_modules/history/node_modules/deep-equal/test/cmp.js
+202 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/deep-equal/test/cmp.js',
+202 silly gunzTarPerm   420,
+202 silly gunzTarPerm   436 ]
+203 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/package.json
+204 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/package.json',
+204 silly gunzTarPerm   420,
+204 silly gunzTarPerm   436 ]
+205 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/README.md
+206 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/README.md',
+206 silly gunzTarPerm   420,
+206 silly gunzTarPerm   436 ]
+207 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/browser.js
+208 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/browser.js',
+208 silly gunzTarPerm   420,
+208 silly gunzTarPerm   436 ]
+209 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/invariant.js
+210 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/invariant.js',
+210 silly gunzTarPerm   420,
+210 silly gunzTarPerm   436 ]
+211 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/CHANGELOG.md
+212 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/CHANGELOG.md',
+212 silly gunzTarPerm   420,
+212 silly gunzTarPerm   436 ]
+213 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/package.json
+214 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/package.json',
+214 silly gunzTarPerm   420,
+214 silly gunzTarPerm   436 ]
+215 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/.npmignore
+216 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/.npmignore',
+216 silly gunzTarPerm   420,
+216 silly gunzTarPerm   436 ]
+217 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/README.md
+218 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/README.md',
+218 silly gunzTarPerm   420,
+218 silly gunzTarPerm   436 ]
+219 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/custom.js
+220 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/custom.js',
+220 silly gunzTarPerm   420,
+220 silly gunzTarPerm   436 ]
+221 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/index.js
+222 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/index.js',
+222 silly gunzTarPerm   420,
+222 silly gunzTarPerm   436 ]
+223 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/loose-envify.js
+224 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/loose-envify.js',
+224 silly gunzTarPerm   420,
+224 silly gunzTarPerm   436 ]
+225 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/package.json
+226 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/package.json',
+226 silly gunzTarPerm   420,
+226 silly gunzTarPerm   436 ]
+227 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/.npmignore
+228 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/.npmignore',
+228 silly gunzTarPerm   420,
+228 silly gunzTarPerm   436 ]
+229 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/LICENSE
+230 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/LICENSE',
+230 silly gunzTarPerm   420,
+230 silly gunzTarPerm   436 ]
+231 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/esprima-compare.js
+232 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/esprima-compare.js',
+232 silly gunzTarPerm   420,
+232 silly gunzTarPerm   436 ]
+233 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/index.js
+234 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/index.js',
+234 silly gunzTarPerm   420,
+234 silly gunzTarPerm   436 ]
+235 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/generate-index.js
+236 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/generate-index.js',
+236 silly gunzTarPerm   420,
+236 silly gunzTarPerm   436 ]
+237 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/.travis.yml
+238 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/.travis.yml',
+238 silly gunzTarPerm   420,
+238 silly gunzTarPerm   436 ]
+239 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/changelog.md
+240 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/changelog.md',
+240 silly gunzTarPerm   420,
+240 silly gunzTarPerm   436 ]
+241 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/readme.md
+242 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/readme.md',
+242 silly gunzTarPerm   420,
+242 silly gunzTarPerm   436 ]
+243 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/regex.coffee
+244 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/regex.coffee',
+244 silly gunzTarPerm   420,
+244 silly gunzTarPerm   436 ]
+245 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/index.js
+246 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/index.js',
+246 silly gunzTarPerm   420,
+246 silly gunzTarPerm   436 ]
+247 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/base64.js
+248 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/base64.js',
+248 silly gunzTarPerm   420,
+248 silly gunzTarPerm   436 ]
+249 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/division.js
+250 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/division.js',
+250 silly gunzTarPerm   420,
+250 silly gunzTarPerm   436 ]
+251 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/errors.js
+252 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/errors.js',
+252 silly gunzTarPerm   420,
+252 silly gunzTarPerm   436 ]
+253 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/regex.js
+254 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/regex.js',
+254 silly gunzTarPerm   420,
+254 silly gunzTarPerm   436 ]
+255 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/base64.json
+256 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/base64.json',
+256 silly gunzTarPerm   420,
+256 silly gunzTarPerm   436 ]
+257 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/division.json
+258 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/division.json',
+258 silly gunzTarPerm   420,
+258 silly gunzTarPerm   436 ]
+259 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/errors.json
+260 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/errors.json',
+260 silly gunzTarPerm   420,
+260 silly gunzTarPerm   436 ]
+261 silly gunzTarPerm extractEntry node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/regex.json
+262 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/invariant/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/regex.json',
+262 silly gunzTarPerm   420,
+262 silly gunzTarPerm   436 ]
+263 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/package.json
+264 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/package.json', 420, 436 ]
+265 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/.npmignore
+266 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/.npmignore', 420, 436 ]
+267 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/README.md
+268 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/README.md', 420, 436 ]
+269 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/LICENSE
+270 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/LICENSE', 420, 436 ]
+271 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/CONTRIBUTING.md
+272 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/CONTRIBUTING.md',
+272 silly gunzTarPerm   420,
+272 silly gunzTarPerm   436 ]
+273 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/.eslintignore
+274 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/.eslintignore',
+274 silly gunzTarPerm   420,
+274 silly gunzTarPerm   436 ]
+275 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/.travis.yml
+276 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/.travis.yml', 420, 436 ]
+277 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/bower.json
+278 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/bower.json', 420, 436 ]
+279 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/lib/index.js
+280 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/lib/index.js', 420, 436 ]
+281 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/lib/parse.js
+282 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/lib/parse.js', 420, 436 ]
+283 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/lib/stringify.js
+284 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/lib/stringify.js',
+284 silly gunzTarPerm   420,
+284 silly gunzTarPerm   436 ]
+285 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/lib/utils.js
+286 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/lib/utils.js', 420, 436 ]
+287 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/CHANGELOG.md
+288 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/CHANGELOG.md', 420, 436 ]
+289 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/test/parse.js
+290 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/test/parse.js',
+290 silly gunzTarPerm   420,
+290 silly gunzTarPerm   436 ]
+291 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/test/stringify.js
+292 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/test/stringify.js',
+292 silly gunzTarPerm   420,
+292 silly gunzTarPerm   436 ]
+293 silly gunzTarPerm extractEntry node_modules/history/node_modules/qs/test/utils.js
+294 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/qs/test/utils.js',
+294 silly gunzTarPerm   420,
+294 silly gunzTarPerm   436 ]
+295 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/package.json
+296 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/package.json',
+296 silly gunzTarPerm   420,
+296 silly gunzTarPerm   436 ]
+297 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/README.md
+298 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/README.md',
+298 silly gunzTarPerm   420,
+298 silly gunzTarPerm   436 ]
+299 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/browser.js
+300 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/browser.js',
+300 silly gunzTarPerm   420,
+300 silly gunzTarPerm   436 ]
+301 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/warning.js
+302 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/warning.js',
+302 silly gunzTarPerm   420,
+302 silly gunzTarPerm   436 ]
+303 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/CHANGELOG.md
+304 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/CHANGELOG.md',
+304 silly gunzTarPerm   420,
+304 silly gunzTarPerm   436 ]
+305 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/LICENSE.md
+306 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/LICENSE.md',
+306 silly gunzTarPerm   420,
+306 silly gunzTarPerm   436 ]
+307 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/package.json
+308 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/package.json',
+308 silly gunzTarPerm   420,
+308 silly gunzTarPerm   436 ]
+309 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/.npmignore
+310 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/.npmignore',
+310 silly gunzTarPerm   420,
+310 silly gunzTarPerm   436 ]
+311 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/README.md
+312 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/README.md',
+312 silly gunzTarPerm   420,
+312 silly gunzTarPerm   436 ]
+313 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/custom.js
+314 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/custom.js',
+314 silly gunzTarPerm   420,
+314 silly gunzTarPerm   436 ]
+315 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/index.js
+316 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/index.js',
+316 silly gunzTarPerm   420,
+316 silly gunzTarPerm   436 ]
+317 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/loose-envify.js
+318 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/loose-envify.js',
+318 silly gunzTarPerm   420,
+318 silly gunzTarPerm   436 ]
+319 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/package.json
+320 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/package.json',
+320 silly gunzTarPerm   420,
+320 silly gunzTarPerm   436 ]
+321 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/.npmignore
+322 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/.npmignore',
+322 silly gunzTarPerm   420,
+322 silly gunzTarPerm   436 ]
+323 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/LICENSE
+324 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/LICENSE',
+324 silly gunzTarPerm   420,
+324 silly gunzTarPerm   436 ]
+325 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/esprima-compare.js
+326 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/esprima-compare.js',
+326 silly gunzTarPerm   420,
+326 silly gunzTarPerm   436 ]
+327 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/index.js
+328 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/index.js',
+328 silly gunzTarPerm   420,
+328 silly gunzTarPerm   436 ]
+329 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/generate-index.js
+330 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/generate-index.js',
+330 silly gunzTarPerm   420,
+330 silly gunzTarPerm   436 ]
+331 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/.travis.yml
+332 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/.travis.yml',
+332 silly gunzTarPerm   420,
+332 silly gunzTarPerm   436 ]
+333 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/changelog.md
+334 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/changelog.md',
+334 silly gunzTarPerm   420,
+334 silly gunzTarPerm   436 ]
+335 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/readme.md
+336 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/readme.md',
+336 silly gunzTarPerm   420,
+336 silly gunzTarPerm   436 ]
+337 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/regex.coffee
+338 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/regex.coffee',
+338 silly gunzTarPerm   420,
+338 silly gunzTarPerm   436 ]
+339 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/index.js
+340 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/index.js',
+340 silly gunzTarPerm   420,
+340 silly gunzTarPerm   436 ]
+341 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/base64.js
+342 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/base64.js',
+342 silly gunzTarPerm   420,
+342 silly gunzTarPerm   436 ]
+343 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/division.js
+344 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/division.js',
+344 silly gunzTarPerm   420,
+344 silly gunzTarPerm   436 ]
+345 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/errors.js
+346 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/errors.js',
+346 silly gunzTarPerm   420,
+346 silly gunzTarPerm   436 ]
+347 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/regex.js
+348 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/regex.js',
+348 silly gunzTarPerm   420,
+348 silly gunzTarPerm   436 ]
+349 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/base64.json
+350 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/base64.json',
+350 silly gunzTarPerm   420,
+350 silly gunzTarPerm   436 ]
+351 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/division.json
+352 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/division.json',
+352 silly gunzTarPerm   420,
+352 silly gunzTarPerm   436 ]
+353 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/errors.json
+354 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/errors.json',
+354 silly gunzTarPerm   420,
+354 silly gunzTarPerm   436 ]
+355 silly gunzTarPerm extractEntry node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/regex.json
+356 silly gunzTarPerm modified mode [ 'node_modules/history/node_modules/warning/node_modules/loose-envify/node_modules/js-tokens/test/fixtures/regex.json',
+356 silly gunzTarPerm   420,
+356 silly gunzTarPerm   436 ]
+357 silly lockFile 4b23d125-e-modules-react-router-bootstrap tar:///home/andrew/cybervision/node_modules/react-router-bootstrap
+358 silly lockFile 4b23d125-e-modules-react-router-bootstrap tar:///home/andrew/cybervision/node_modules/react-router-bootstrap
+359 silly lockFile e4b5296e-ter-bootstrap-0-19-3-package-tgz tar:///home/andrew/.npm/react-router-bootstrap/0.19.3/package.tgz
+360 silly lockFile e4b5296e-ter-bootstrap-0-19-3-package-tgz tar:///home/andrew/.npm/react-router-bootstrap/0.19.3/package.tgz
+361 info preinstall react-router-bootstrap@0.19.3
+362 verbose readDependencies using package.json deps
+363 verbose readDependencies using package.json deps
+364 silly resolved []
+365 verbose about to build /home/andrew/cybervision/node_modules/react-router-bootstrap
+366 info build /home/andrew/cybervision/node_modules/react-router-bootstrap
+367 verbose linkStuff [ false, false, false, '/home/andrew/cybervision/node_modules' ]
+368 info linkStuff react-router-bootstrap@0.19.3
+369 verbose linkBins react-router-bootstrap@0.19.3
+370 verbose linkMans react-router-bootstrap@0.19.3
+371 verbose rebuildBundles react-router-bootstrap@0.19.3
+372 verbose rebuildBundles [ 'history' ]
+373 info install react-router-bootstrap@0.19.3
+374 info postinstall react-router-bootstrap@0.19.3
+375 verbose readDependencies using package.json deps
+376 verbose already installed skipping react-router@>=1.0.0-rc3 /home/andrew/cybervision
+377 silly resolved []
+378 error peerinvalid The package react does not satisfy its siblings' peerDependencies requirements!
+378 error peerinvalid Peer react-router@0.13.4 wants react@0.13.x
+378 error peerinvalid Peer react-router-bootstrap@0.19.3 wants react@>=0.13.0
+378 error peerinvalid Peer react-bootstrap@0.27.3 wants react@>=0.14.0
+379 error System Linux 3.13.0-66-generic
+380 error command "/home/andrew/.nvm/v0.10.36/bin/node" "/home/andrew/.nvm/v0.10.36/bin/npm" "install" "react-router-bootstrap" "--save"
+381 error cwd /home/andrew/cybervision
+382 error node -v v0.10.36
+383 error npm -v 1.4.28
+384 error code EPEERINVALID
+385 verbose exit [ 1, true ]
