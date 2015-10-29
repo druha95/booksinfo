@@ -1,0 +1,63 @@
+{
+    "authors": [
+        {
+            "name": "Andre Gide",
+            "biography": [
+                [
+                    "André Paul Guillaume Gide (French: [ɑ̃dʁe pɔl ɡijom ʒid]; 22 November 1869 – 19 February 1951) was a French author and winner of the Nobel Prize in Literature in 1947 \"for his comprehensive and artistically significant writings",
+                    "in which human problems and conditions have been presented with a fearless love of truth and keen psychological insight\".[1] Gide's career ranged from its beginnings in the symbolist movement",
+                    "to the advent of anticolonialism between the two World Wars."
+                ]
+            ],
+            "books": [
+                "0"
+            ]
+        },
+        {
+            "name": "Robert Graves",
+            "biography": [
+                [
+                    "Robert von Ranke Graves (also known as Robert Ranke Graves and most commonly Robert Graves) (24 July 1895 – 7 December 1985)[1] was an English poet",
+                    "novelist",
+                    "critic and classicist. During his long life he produced more than 140 works. Graves's poems—together with his translations and innovative analysis and interpretations of the Greek myths; his memoir of his early life",
+                    "including his role in the First World War",
+                    "Good-Bye to All That; and his speculative study of poetic inspiration",
+                    "The White Goddess—have never been out of print.[2]"
+                ]
+            ],
+            "books": [
+                "0",
+                "2"
+            ]
+        },
+        {
+            "name": "Louis-Ferdinand Céline",
+            "biography": "Louis-Ferdinand Céline (French: [selin]) was the pen name of Dr. Louis Ferdinand Auguste Destouches (pronounced: [detuʃ]; 27 May 1894 – 1 July 1961), a French novelist, pamphleteer and physician. The name Céline was the first name of his grandmother. He developed a new style of writing that modernized French literature. He remains controversial to this day because of his virulent antisemitism, Holocaust Denial and racism.",
+            "books": [
+                "1"
+            ]
+        },
+        {
+            "name": "Thomas Mann",
+            "biography": "Paul Thomas Mann ([paʊ̯l toːmas man]; 6 June 1875 – 12 August 1955) was a German novelist, short story writer, social critic, philanthropist, essayist, and the 1929 Nobel Prize in Literature laureate. His highly symbolic and ironic epic novels and novellas are noted for their insight into the psychology of the artist and the intellectual. His analysis and critique of the European and German soul used modernized German and Biblical stories, as well as the ideas of Goethe, Nietzsche and Schopenhauer.",
+            "books": [
+                "1",
+                "3"
+            ]
+        },
+        {
+            "name": "Alain-Fournier",
+            "biography": [
+                [
+                    "Alain-Fournier (pronounced: [a.lɛ̃.fuʁ.nje]) was the pseudonym of Henri-Alban Fournier (3 October 1886 – 22 September 1914[1])",
+                    "a French author and soldier. He was the author of a single novel",
+                    "Le Grand Meaulnes (1913)",
+                    "which has been twice filmed and is considered a classic of French literature."
+                ]
+            ],
+            "books": [
+                "3"
+            ]
+        }
+    ]
+}

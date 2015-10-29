@@ -1,0 +1,53 @@
+{
+    "books": [
+        {
+            "id": "1",
+            "name": "The Counterfeiters",
+            "autors": [
+                "0",
+                "1"
+            ],
+            "genre": [
+                "0",
+                "1"
+            ],
+            "description": "me to hear a step in the passage,\" said Bernard to himself."
+        },
+        {
+            "id": "2",
+            "name": "Journey to the End of the Night",
+            "autors": [
+                "2",
+                "3"
+            ],
+            "genre": [
+                "0",
+                "2"
+            ],
+            "description": "\"I, Tiberius Claudius Drusus Nero Germanicus This-that-and-the-other (for I shall not trouble you yet with all my titles) who was once, and not so long ago either, known to my friends and relatives...\""
+        },
+        {
+            "id": "3",
+            "name": "Froth on the Daydream",
+            "autors": [
+                "2"
+            ],
+            "genre": [
+                "1"
+            ],
+            "description": "\"Dans la vie, l'essentiel est de porter sur tout des jugements a priori.Colin finished dressing.\""
+        },
+        {
+            "id": "4",
+            "name": "The Wanderer",
+            "autors": [
+                "4",
+                "3"
+            ],
+            "genre": [
+                "3"
+            ],
+            "description": "\"He appeared at our house on a Sunday in November 189...(Davison translation)\""
+        }
+    ]
+}

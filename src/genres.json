@@ -1,0 +1,30 @@
+{
+    "genres": [
+        {
+            "name": "Roman",
+            "books": [
+                "0",
+                "1"
+            ]
+        },
+        {
+            "name": "Mystery",
+            "books": [
+                "0",
+                "2"
+            ]
+        },
+        {
+            "name": "Hystorical",
+            "books": [
+                "1"
+            ]
+        },
+        {
+            "name": "Comedy",
+            "books": [
+                "3"
+            ]
+        }
+    ]
+}
